@@ -21,6 +21,7 @@ public class InternalClassTest {
         public Person(){
             System.out.println("i'm Person Constructor");
         }
+        public void print(){}
     }
     //成员内部类-继承Person
     private class Student extends InternalClassTest.Person{
@@ -32,15 +33,21 @@ public class InternalClassTest {
     //静态内部类
     public static class staticClassTest{
         public void print(){
-            System.out.println("i'm staticClassTest");
+            System.out.println("i'm staticClassTest print");
         }
     }
 
+    //局部内部类
     public InternalClassTest.Person methodInternalClass(){
-        class Teacher extends InternalClassTest.Person{}
+        class Teacher extends InternalClassTest.Person{
+            public void print(){
+                System.out.println("i'm InternalClassTest.methodInternalClass print");
+            }
+        }
         return new Teacher();
     }
 
+    //局部内部类
     public void methodInternalClass1(){
         class Test{
             public void print(){
@@ -48,6 +55,5 @@ public class InternalClassTest {
             }
         }
         new Test().print();
-        System.out.println("==================");
     }
 }
