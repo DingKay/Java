@@ -31,14 +31,14 @@ public class InternalClassTest {
     }
 
     //静态内部类
-    public static class staticClassTest{
+    public static class StaticClassTest{
         public void print(){
             System.out.println("i'm staticClassTest print");
         }
     }
 
     //局部内部类
-    public InternalClassTest.Person methodInternalClass(){
+    public InternalClassTest.Person MethodInternalClass(){
         class Teacher extends InternalClassTest.Person{
             public void print(){
                 System.out.println("i'm InternalClassTest.methodInternalClass print");
@@ -48,12 +48,28 @@ public class InternalClassTest {
     }
 
     //局部内部类
-    public void methodInternalClass1(){
+    public void MethodInternalClass1(){
         class Test{
             public void print(){
                 System.out.println("I'm MethodInternalClass1.Test print");
             }
         }
         new Test().print();
+    }
+    //局部内部类的多重嵌套
+    public class NestingOne{
+        void print(){
+            System.out.println("NestingOne.print");
+        }
+        public class NestingTwo{
+            void print(){
+                System.out.println("NestingTwo.print");
+            }
+            public class NestingThree{
+                void print(){
+                    System.out.println("NestingThree.print");
+                }
+            }
+        }
     }
 }
