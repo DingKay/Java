@@ -87,6 +87,8 @@ public class InternalClassTest {
     }
 
     class ExtendsBase extends InnerClassBase {
-
+        ExtendsBase(){
+            System.out.println("InternalClassTest ==> ExtendsBase.ExtendsBase");
+        }
     }
 }

@@ -7,5 +7,6 @@ package com.dk.internal;
 public class InnerClassExtends extends InternalClassTest.Base{
     public InnerClassExtends(InternalClassTest ict){
         ict.super();
+        System.out.println("InnerClassExtends.InnerClassExtends");
     }
 }

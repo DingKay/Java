@@ -46,19 +46,23 @@ public class TestToInternal {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                System.out.println("TestToInternal.run");
+                System.out.println("Thread ==>TestToInternal.run");
             }
         }.start();
 
+        System.out.println("当父/子类 均为成员内部类时");
         //成员内部类的继承 当父/子类 均为成员内部类时
         new InternalClassTest().new Base();
         new InternalClassTest().new Son();
 
+        System.out.println("当父类为成员内部类 子类为外部类时");
         //成员内部类的继承 当父类为成员内部类 子类为外部类时
         new InternalClassTest().new Base();
         new InnerClassExtends(new InternalClassTest());
 
+        System.out.println("当父类为外部类时 子类为成员内部类");
         //成员内部类的继承 当父类为外部类时 子类为成员内部类
-
+        new InnerClassBase();
+        new InternalClassTest().new ExtendsBase();
     }
 }
