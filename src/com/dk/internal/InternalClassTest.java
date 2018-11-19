@@ -72,4 +72,21 @@ public class InternalClassTest {
             }
         }
     }
+
+    //内部类中的继承
+    class Base{
+        Base(){
+            System.out.println("InternalClassTest ==> Base.Base");
+        }
+    }
+
+    class Son extends InternalClassTest.Base{
+        Son(){
+            System.out.println("InternalClassTest ==> Son.Son");
+        }
+    }
+
+    class ExtendsBase extends InnerClassBase {
+
+    }
 }

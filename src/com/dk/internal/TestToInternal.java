@@ -35,5 +35,30 @@ public class TestToInternal {
 
         //three
         new InternalClassTest().new NestingOne().new NestingTwo().new NestingThree().print();
+
+        System.out.println("== 匿名内部类 ==");
+        //匿名内部类
+        new Thread(){
+            @Override
+            public void run(){
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                System.out.println("TestToInternal.run");
+            }
+        }.start();
+
+        //成员内部类的继承 当父/子类 均为成员内部类时
+        new InternalClassTest().new Base();
+        new InternalClassTest().new Son();
+
+        //成员内部类的继承 当父类为成员内部类 子类为外部类时
+        new InternalClassTest().new Base();
+        new InnerClassExtends(new InternalClassTest());
+
+        //成员内部类的继承 当父类为外部类时 子类为成员内部类
+
     }
 }
