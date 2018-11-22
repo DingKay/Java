@@ -1,0 +1,1 @@
+**__How To Access Private Methods Or Attribute__**
