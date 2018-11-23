@@ -1,5 +1,7 @@
 .idea
 *.iml
+.classpath
 out
 gen
+target
 !pom.xml
