@@ -23,8 +23,8 @@ public class TestToPrintNumbers {
                     synchronized (lock) {
                         if (i % 2 == 1) {
                             System.out.println(Thread.currentThread().getName() + ":" + i++);
-                        } else {
                             lock.notifyAll();
+                        } else {
                             try {
                                 lock.wait();
                             } catch (InterruptedException e) {
@@ -45,8 +45,8 @@ public class TestToPrintNumbers {
                     synchronized (lock) {
                         if (i % 2 == 0) {
                             System.out.println(Thread.currentThread().getName() + ":" + i++);
-                        } else {
                             lock.notifyAll();
+                        } else {
                             if (i <= total) {
                                 try {
                                     lock.wait();
