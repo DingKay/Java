@@ -3,7 +3,7 @@ package dk.thread.test.printnums;
 /**
  * @author DingKai
  * @Classname TestToPrintNumbers
- * @Description TODO
+ * @Description 匿名内部类 创建两个线程 分别打印奇偶数
  * @create 2018-11-23
  */
 public class TestToPrintNumbers {
