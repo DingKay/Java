@@ -1,10 +1,13 @@
 package dk.thread.test.printnums;
 
+import com.sun.org.apache.xalan.internal.xsltc.compiler.Parser;
+
 /**
  * @author DingKai
  * @Classname TestToPrintNumbers
  * @Description 匿名内部类 创建两个线程 分别打印奇偶数
  * 为了测试双线程分别打印奇偶数所花费的时间 将线程调用抽取出成为method
+ * 本次测试测试得出在小数据量中时 使用lambda表达式反而出现负优化。
  * @create 2018-11-23
  */
 public class TestToPrintNumbers {
@@ -31,14 +34,76 @@ public class TestToPrintNumbers {
 
         new TestToPrintNumbers().toGetThreadTime();
 
-        System.out.println(System.currentTimeMillis() - startTime);
+        System.out.println("Thread Used Time ==> " + (System.currentTimeMillis() - startTime));
+
+        long startTimeWithLambda =System.currentTimeMillis();
+
+        new TestToPrintNumbers().toGetThreadTimeWithLambda();
+
+        System.out.println("Lambda For Easy Thread Used Time ==> " + (System.currentTimeMillis() - startTimeWithLambda));
+    }
+
+    private void toGetThreadTimeWithLambda() {
+        Thread t1 = new Thread(() ->{
+                while(i <= total){
+                    synchronized (lock) {
+                        if (i % 2 == 1) {
+                            System.out.println(Thread.currentThread().getName() + ":" + i++);
+                            lock.notifyAll();
+                        } else {
+                            try {
+                                lock.wait();
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }
+                }
+            });
+
+        t1.setName("奇数线程");
+
+        Thread t2 = new Thread(() ->{
+                while (i <= total){
+                    synchronized (lock) {
+                        if (i % 2 == 0) {
+                            System.out.println(Thread.currentThread().getName() + ":" + i++);
+                            lock.notifyAll();
+                        } else {
+                            if (i <= total) {
+                                try {
+                                    lock.wait();
+                                } catch (InterruptedException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        }
+                    }
+                    if(i == total)
+                        setFlag(true);
+                }
+            });
+
+        t2.setName("偶数线程");
+
+        t1.start();
+        t2.start();
+
+        while(!isFlag())
+            synchronized (this) {
+                try {
+                    this.wait();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
     }
 
     private void toGetThreadTime() {
         Thread t1 = new Thread(){
             @Override
-            public void run(){
-                while(i <= total){
+            public void run (){
+                while (i <= total) {
                     synchronized (lock) {
                         if (i % 2 == 1) {
                             System.out.println(Thread.currentThread().getName() + ":" + i++);
