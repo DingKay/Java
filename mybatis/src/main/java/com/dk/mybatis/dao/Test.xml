@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Test">
+    <!--可以重用的SQL块，也可以被其他语句引用-->
+    <sql id="columns">
+        id,name
+    </sql>
+    <!--用来描述数据库结果集和对象的对应关系-->
+
+    <!-- 1.查找所有部门-->
+    <select id="getAllTest" resultType="com.dk.mybatis.dao.Test">
+        select <include refid="columns"></include> from t_Test
+    </select>
+</mapper>
