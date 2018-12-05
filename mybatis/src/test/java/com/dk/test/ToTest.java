@@ -29,10 +29,16 @@ public class ToTest {
         //01.弱类型  通过命名空间唯一锁定要执行的sql
         // List<Department> list = session.selectList("cn.happy.dao.getAllDept");
         //02.强类型
-        List<com.dk.mybatis.dao.Test> list = session.selectList("getAllTest");
-        for (com.dk.mybatis.dao.Test test : list) {
-            System.out.println(test.getName());
-        }
+//        List<com.dk.mybatis.dao.Test> list = session.selectList("getAllTest");
+//        for (com.dk.mybatis.dao.Test test : list) {
+//            System.out.println(test.getName());
+//        }
+//        session.update("createTable");
+//        com.dk.mybatis.dao.Test t = new com.dk.mybatis.dao.Test();
+//        t.setTablename("t_hi");
+//        int result = session.selectOne("getTable",t);
+        int result = session.selectOne("getTable","t_hi");
+        System.out.println("result = " + result);
     }
 
 }
