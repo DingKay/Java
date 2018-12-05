@@ -6,5 +6,6 @@ package com.dk.mybatis.mapper;
  * @Description TODO
  * @create 2018-12-05
  */
-public class UserMapper {
+public interface UserMapper {
+    int getTable(String tablename);
 }
