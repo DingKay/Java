@@ -19,7 +19,8 @@
                            name varchar(20) not null )
     </update>
     <!--TABLE_SCHEMA='dbname' and-->
-    <!--com.dk.mybatis.mapperper.User-->
+    <!--com.dk.mybatis.mapper.User-->
+    <!--这里tablename用'$'出错 加上''单引号默认为 [like 模糊查询] 配合$使用 模糊查询中 #不带''单引号-->
     <select id="getTable" parameterType="String" resultType="Integer">
         select count(*) from INFORMATION_SCHEMA.TABLES where TABLE_NAME=#{tablename};
     </select>

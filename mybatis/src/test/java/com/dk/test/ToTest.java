@@ -34,9 +34,9 @@ public class ToTest {
         for (User test : list) {
             System.out.println(test.getName());
         }
-//        session.update("createTable");
-//        int result = session.selectOne("getTable","t_hi");
-//        System.out.println("result = " + result);
+        session.update("createTable");
+        int result = session.selectOne("getTable","t_hi");
+        System.out.println("result = " + result);
     }
 
 }
