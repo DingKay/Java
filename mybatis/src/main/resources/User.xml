@@ -11,7 +11,7 @@
 
     <!--当这里配置了resultType后 mybatis会自动扫描配置的javabean-->
     <select id="getAllTest" resultType="com.dk.mybatis.entity.User">
-        select <include refid="columns"/> from t_test
+        select <include refid="columns"/> from t_user
     </select>
 
     <update id="createTable">
@@ -24,4 +24,7 @@
     <select id="getTable" parameterType="String" resultType="Integer">
         select count(*) from INFORMATION_SCHEMA.TABLES where TABLE_NAME=#{tablename};
     </select>
+    <update id="alterTableName">
+        alter table t_test rename to t_user
+    </update>
 </mapper>
