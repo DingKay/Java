@@ -9,7 +9,7 @@
     </settings>
     <typeAliases>
 
-        <package name="cn.happy.entity"/>
+        <package name="com.dk.mybatis.mapper"/>
     </typeAliases>
     <environments default="development">
         <environment id="development">
@@ -23,7 +23,7 @@
         </environment>
     </environments>
     <mappers>
-        <mapper resource="Test.xml"/>
+        <mapper resource="User.xml"/>
     </mappers>
 
 </configuration>
