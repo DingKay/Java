@@ -21,6 +21,26 @@ public class ThreadPoolExecutorUtils {
         System.out.println("Queue Size ==> " + threadPoolExecutor.getQueue().size());
     }
 
+    public static void goStart(Thread thread, ThreadPoolExecutor threadPoolExecutor) throws InterruptedException {
+        //Execute 1.2.3 Then 4.5.6
+        startThreeThreads(thread,threadPoolExecutor);
+        System.out.println("===> Start Three Thread <===");
+        //Print Log
+        printLog(threadPoolExecutor);
+
+        //Start Thread Again
+        startThreeThreads(thread,threadPoolExecutor);
+        System.out.println("===> Start Three Thread Again <===");
+        printLog(threadPoolExecutor);
+
+        //wait eight sec
+        Thread.sleep(8 * 1000);
+        printLog(threadPoolExecutor);
+
+        //Close ThreadPoolExecutor Service
+        threadPoolExecutor.shutdown();
+    }
+
     public static Thread getThread() {
         //Thread Anonymous Inner Class
         return new Thread(){
