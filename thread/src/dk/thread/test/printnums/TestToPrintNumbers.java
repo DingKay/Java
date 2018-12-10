@@ -3,7 +3,8 @@ package dk.thread.test.printnums;
 /**
  * @author DingKai
  * @Classname TestToPrintNumbers
- * @Description 匿名内部类 创建两个线程 分别打印奇偶数
+ * @Description Anonymous Inner Class : To Create Two Thread Then Print A And Print B Separately.
+ * Launch This Class To Test Threads Used Time. Extract Transfer
  * 为了测试双线程分别打印奇偶数所花费的时间 将线程调用抽取出成为method
  * 本次小测试 测试得出在小数据量中时 使用lambda表达式反而出现负优化。
  * @create 2018-11-23
