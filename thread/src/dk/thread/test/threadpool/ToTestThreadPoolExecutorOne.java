@@ -9,7 +9,7 @@ import static dk.thread.test.threadpool.ThreadPoolExecutorUtils.*;
 /**
  * @author DingKai
  * @Classname ToTestThreadPoolExecutorOne
- * @Description To Test ThreadPoolExecutor Rule And Find The Different Point.
+ * @Description To Test ThreadPoolExecutor Rule And Find The Difference.
                 If ThreadPoolExecutor Parameter Use SynchronousQueue Then When
                 Task Execute Will Create A New Thread.
                 SynchronousQueue Will Not To Storage Task

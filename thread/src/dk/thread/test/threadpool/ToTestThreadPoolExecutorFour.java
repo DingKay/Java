@@ -8,6 +8,6 @@ package dk.thread.test.threadpool;
  */
 public class ToTestThreadPoolExecutorFour {
     public static void main(String[] args) {
-        
+
     }
 }
