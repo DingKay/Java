@@ -6,14 +6,14 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @author DingKai
- * @Classname ToTestThreadPoolExecutor
+ * @Classname ToTestThreadPoolExecutorOne
  * @Description To Test ThreadPoolExecutor Rule
  *              And if ThreadPoolExecutor Parameter Use SynchronousQueue
  *              Then When Task Execute Will Create A New Thread
  *              SynchronousQueue Will Not To Storage Task
  * @create 2018-12-10
  */
-public class ToTestThreadPoolExecutor {
+public class ToTestThreadPoolExecutorOne {
     private static void startThreeThreads(Thread thread, ThreadPoolExecutor threadPoolExecutor) {
         threadPoolExecutor.execute(thread);
         threadPoolExecutor.execute(thread);
