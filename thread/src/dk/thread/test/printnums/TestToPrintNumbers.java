@@ -30,15 +30,22 @@ public class TestToPrintNumbers {
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
 
+        //The Time To Print Numbers 0 To 100 Used Two Threads
         new TestToPrintNumbers().toGetThreadTime();
 
-        System.out.println("Thread Used Time ==> " + (System.currentTimeMillis() - startTime));
+        System.out.println("Print Numbers 0 To 100 Time Spent Using Two Threads ==> " + (System.currentTimeMillis() - startTime));
 
-        long startTimeWithLambda =System.currentTimeMillis();
+        long startTimeWithLambda = System.currentTimeMillis();
 
         new TestToPrintNumbers().toGetThreadTimeWithLambda();
 
-        System.out.println("Lambda For Easy Thread Used Time ==> " + (System.currentTimeMillis() - startTimeWithLambda));
+        System.out.println("Print Numbers 0 To 100 Time Spend Using Lambda ==> " + (System.currentTimeMillis() - startTimeWithLambda));
+
+        long startTimeWithForeach = System.currentTimeMillis();
+        //
+        new TestToPrintNumbers().toGetPrintNumbersTime();
+
+        System.out.println("Print Numbers 0 To 100 Time Spent Using Foreach ==> " + (System.currentTimeMillis() - startTimeWithForeach));
     }
 
     private void toGetThreadTimeWithLambda() {
@@ -59,7 +66,7 @@ public class TestToPrintNumbers {
                 }
             });
 
-        t1.setName("奇数线程");
+        t1.setName("Odd Number Of Thread");
 
         Thread t2 = new Thread(() ->{
                 while (i <= total){
@@ -82,7 +89,7 @@ public class TestToPrintNumbers {
                 }
             });
 
-        t2.setName("偶数线程");
+        t2.setName("Even Number Of Thread");
 
         t1.start();
         t2.start();
@@ -118,7 +125,7 @@ public class TestToPrintNumbers {
             }
         };
 
-        t1.setName("奇数线程");
+        t1.setName("打印奇数线程");
 
         Thread t2 = new Thread(){
             @Override
@@ -144,7 +151,7 @@ public class TestToPrintNumbers {
             }
         };
 
-        t2.setName("偶数线程");
+        t2.setName("打印偶数线程");
 
         t1.start();
         t2.start();
@@ -157,5 +164,12 @@ public class TestToPrintNumbers {
                     e.printStackTrace();
                 }
             }
+    }
+    
+    private void toGetPrintNumbersTime(){
+        System.out.println("== Foreach Start ==");
+        for (int j = 0; j < 100; j++) {
+            System.out.println("j = " + j);
+        }
     }
 }
