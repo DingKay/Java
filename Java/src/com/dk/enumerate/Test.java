@@ -10,5 +10,6 @@ public class Test {
     public static void main(String[] args) {
         //1.Enumerate Constant
         System.out.println("red ==> " + Color.RED + "\n" + "blue ==> " + Color.BLUE);
+        System.out.println("green ==> " + Color.GREEN + "\n");
     }
 }
