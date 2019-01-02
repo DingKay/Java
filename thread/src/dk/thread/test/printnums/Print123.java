@@ -4,6 +4,7 @@ package dk.thread.test.printnums;
  * @author DingKai
  * @Classname Print123
  * @Description Three Threads Of To Print 1.2.3...100
+ * TODO Add Print Spent Time
  * @create 2019/1/2
  */
 public class Print123 {
@@ -13,7 +14,7 @@ public class Print123 {
     private short i = 0;
     //String Of Control Threads
     private static String key = "one";
-
+    //Above "String" Get/Set Method To Control Threads
     public static String getKey() {
         return key;
     }
@@ -21,7 +22,7 @@ public class Print123 {
     public static void setKey(String newKey) {
         key = newKey;
     }
-
+    //Thread Synchronized Lock >>Object<<
     private final Integer lock = 0;
 
     public static void main(String[] args) {
@@ -31,17 +32,17 @@ public class Print123 {
 
     private void printOneTwoThreeWithLambda(){
         new Thread(() -> {
-            while(i <= total){
+            while(i < total){
                 ifPrint123("one");
             }
         }).start();
         new Thread(() -> {
-            while(i <= total){
+            while(i < total){
                 ifPrint123("two");
             }
         }).start();
         new Thread(() -> {
-            while(i <= total){
+            while(i < total){
                 ifPrint123("three");
             }
         }).start();
@@ -51,8 +52,10 @@ public class Print123 {
         synchronized (lock) {
             if (!getKey().equals(key)) {
                 try {
-//                    System.out.println("Sleep 2 Seconds");
-//                    Thread.sleep(2000);
+                    /*Logs To Test >>NotifyAll<< And >>Wait<<
+                    System.out.println("Sleep 2 Seconds");
+                    Thread.sleep(2000);
+                    */
                     //Thread wait And Blocking
                     lock.wait();
                 } catch (InterruptedException e) {
@@ -63,7 +66,9 @@ public class Print123 {
                 setKey(switchString(key));
                 //Synchronized lock >> Notify All Blocking Thread
                 lock.notifyAll();
-//                System.out.println("notifyAll is End");
+                /*Logs To Test >>NotifyAll<< And >>Wait<<
+                System.out.println("notifyAll is End");
+                */
             }
         }
     }
