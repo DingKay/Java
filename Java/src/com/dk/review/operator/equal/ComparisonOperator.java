@@ -1,4 +1,4 @@
-package com.dk.review.operator;
+package com.dk.review.operator.equal;
 
 public class ComparisonOperator {
     public static void main(String[] args) {
