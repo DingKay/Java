@@ -9,13 +9,14 @@ public class Base {
     //
     private double money;
 
+    public double addMoney(){
+        return 99.99d;
+    }
+
     //
     protected String firstName;
 
     //
     public String Name;
 
-    public double addMoney(){
-        return 99.99d;
-    }
 }
