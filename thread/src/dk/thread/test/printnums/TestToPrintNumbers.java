@@ -24,7 +24,8 @@ public class TestToPrintNumbers {
 
     public synchronized void setFlag(boolean flag) {
         this.flag = flag;
-        this.notifyAll();
+        this.notify();
+        /*notifyAll()*/
     }
 
     public static void main(String[] args) {
@@ -48,115 +49,93 @@ public class TestToPrintNumbers {
         System.out.println("Print Numbers 0 To 100 Time Spent Using Foreach ==> " + (System.currentTimeMillis() - startTimeWithForeach));
     }
 
+    //Lambda Thread
     private void toGetThreadTimeWithLambda() {
         Thread t1 = new Thread(() ->{
-                while(i <= total){
-                    synchronized (lock) {
-                        if (i % 2 == 1) {
-                            System.out.println(Thread.currentThread().getName() + ":" + i++);
-                            lock.notifyAll();
-                        } else {
-                            try {
-                                lock.wait();
-                            } catch (InterruptedException e) {
-                                e.printStackTrace();
-                            }
-                        }
-                    }
-                }
-            });
+            threadOddNums();
+        });
 
         t1.setName("Odd Number Of Thread");
 
         Thread t2 = new Thread(() ->{
-                while (i <= total){
-                    synchronized (lock) {
-                        if (i % 2 == 0) {
-                            System.out.println(Thread.currentThread().getName() + ":" + i++);
-                            lock.notifyAll();
-                        } else {
-                            if (i <= total) {
-                                try {
-                                    lock.wait();
-                                } catch (InterruptedException e) {
-                                    e.printStackTrace();
-                                }
-                            }
-                        }
-                    }
-                    if(i == total)
-                        setFlag(true);
-                }
-            });
+            threadEvenNums();
+        });
 
         t2.setName("Even Number Of Thread");
 
         t1.start();
         t2.start();
 
-        while(!isFlag())
-            synchronized (this) {
-                try {
-                    this.wait();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
+        flagExist();
     }
 
+    //Two Threads
     private void toGetThreadTime() {
         Thread t1 = new Thread(){
             @Override
             public void run (){
-                while (i <= total) {
-                    synchronized (lock) {
-                        if (i % 2 == 1) {
-                            System.out.println(Thread.currentThread().getName() + ":" + i++);
-                            lock.notifyAll();
-                        } else {
-                            try {
-                                lock.wait();
-                            } catch (InterruptedException e) {
-                                e.printStackTrace();
-                            }
-                        }
-                    }
-                }
+                threadOddNums();
             }
         };
 
-        t1.setName("打印奇数线程");
+        t1.setName("奇数线程");
 
         Thread t2 = new Thread(){
             @Override
             public void run(){
-                while (i <= total){
-                    synchronized (lock) {
-                        if (i % 2 == 0) {
-                            System.out.println(Thread.currentThread().getName() + ":" + i++);
-                            lock.notifyAll();
-                        } else {
-                            if (i <= total) {
-                                try {
-                                    lock.wait();
-                                } catch (InterruptedException e) {
-                                    e.printStackTrace();
-                                }
-                            }
-                        }
-                    }
-                    if(i == total)
-                        setFlag(true);
-                }
+                threadEvenNums();
             }
         };
 
-        t2.setName("打印偶数线程");
+        t2.setName("偶数线程");
 
         t1.start();
         t2.start();
 
-        while(!isFlag())
+        flagExist();
+    }
+
+    private void threadEvenNums() {
+        while (i <= total) {
+            synchronized (lock) {
+                if (i % 2 == 0) {
+                    System.out.println(Thread.currentThread().getName() + ":" + i++);
+                    lock.notifyAll();
+                } else {
+                    if (i <= total) {
+                        try {
+                            lock.wait();
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            }
+            if (i == total)
+                setFlag(true);
+        }
+    }
+
+    private void threadOddNums() {
+        while (i <= total) {
+            synchronized (lock) {
+                if (i % 2 == 1) {
+                    System.out.println(Thread.currentThread().getName() + ":" + i++);
+                    lock.notifyAll();
+                } else {
+                    try {
+                        lock.wait();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }
+    }
+
+    //Flag For Notify ==Main Thread ==
+    private void flagExist() {
+        while (!isFlag())
             synchronized (this) {
                 try {
                     this.wait();
@@ -165,10 +144,11 @@ public class TestToPrintNumbers {
                 }
             }
     }
-    
+
+    //Normal Standard >>Foreach<<
     private void toGetPrintNumbersTime(){
         System.out.println("== Foreach Start ==");
-        for (int j = 0; j < 100; j++) {
+        for (int j = 0; j <= 100; j++) {
             System.out.println("j = " + j);
         }
     }
