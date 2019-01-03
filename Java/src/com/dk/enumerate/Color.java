@@ -3,7 +3,7 @@ package com.dk.enumerate;
 /**
  * @author DingKai
  * @Classname Color
- * @Description TO Learn Enumerate
+ * @Description To Learn Enumerate
  * @create 2018/12/24
  */
 public enum Color {
