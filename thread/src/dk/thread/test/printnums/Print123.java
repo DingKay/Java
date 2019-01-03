@@ -4,7 +4,6 @@ package dk.thread.test.printnums;
  * @author DingKai
  * @Classname Print123
  * @Description Three Threads Of To Print 1.2.3...100
- * TODO Add Print Spent Time
  * @create 2019/1/2
  */
 public class Print123 {
