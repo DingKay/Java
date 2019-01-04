@@ -5,6 +5,9 @@ package com.dk.enumerate;
  * @Classname Color
  * @Description To Learn Enumerate :Constant
  *              The Enumerate Class Can Storage Constant ==> public static final
+ *              For Example :Create Class Then Definition "public static final"
+ *              Variable
+ *              Now U Can Use Enumerate Class To Definition Constant
  * @create 2018/12/24
  */
 //Enumerate Class

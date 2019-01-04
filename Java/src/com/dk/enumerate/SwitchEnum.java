@@ -3,7 +3,9 @@ package com.dk.enumerate;
 /**
  * @author DingKai
  * @Classname SwitchEnum
- * @Description TODO
+ * @Description To Learn Enumerate :switch
+ *              Since JDK 1.6 :switch Statement Can Use Enumerate
+ *              More Fast and Easy
  * @create 2019/1/4
  */
 enum toSwitchEnum {
