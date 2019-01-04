@@ -3,7 +3,8 @@ package com.dk.enumerate;
 /**
  * @author DingKai
  * @Classname Color
- * @Description To Learn Enumerate
+ * @Description To Learn Enumerate :Constant
+ *              The Enumerate Class Can Storage Constant ==> public static final
  * @create 2018/12/24
  */
 //Enumerate Class
