@@ -8,7 +8,7 @@ package com.dk.internal.deep.anonymous;
 public class AnonyMousInnerClass {
 
     public void printAnimal(Animal animal){
-        System.out.println(animal.getName() + "吃" + animal.eatFood());
+        System.out.println(animal.getName() + " eat " + animal.eatFood());
     }
 
     public static void main(String[] args) {
@@ -16,11 +16,11 @@ public class AnonyMousInnerClass {
         new AnonyMousInnerClass().printAnimal(new Animal(){
             @Override
             public String eatFood() {
-                return "虫子";
+                return "insect";
             }
             @Override
             public String getName() {
-                return "小鸟";
+                return "bird";
             }
         });
     }

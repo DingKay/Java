@@ -5,13 +5,13 @@ package com.dk.internal.deep.anonymous;
  * @date 2018/11/26 - 0:25
  */
 public abstract class Animal {
-    //动物的名字
+    //Animal's Name
     protected String name;
 
     public String getName() {
         return name;
     }
 
-    //动物的抽象方法
+    //Animal's abstract Method
     public abstract String eatFood();
 }

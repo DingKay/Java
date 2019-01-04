@@ -1,7 +1,7 @@
 ## For Inner Class
 * Member
 
-* Loacl
+* Local
 
 * AnonymousL
 
