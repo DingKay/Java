@@ -25,6 +25,7 @@ public class SwitchEnum {
          *switch (color){
          * case ONE:
          *     color = toSwitchEnum.TWO;
+         *     break;
          *     ...
          *So Look Below
          */
