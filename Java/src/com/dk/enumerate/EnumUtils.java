@@ -73,5 +73,43 @@ public class EnumUtils {
         enumMap.entrySet()){
             System.out.println(colorStringEntry.getKey() + " : " + colorStringEntry.getValue());
         }
+
+        //MONDAY ==> 'name'
+        System.out.println("\n" + Day.MONDAY.name() + ": " + Day.MONDAY.value);
+    }
+    enum Day {
+        SUNDAY(1),
+        MONDAY(2),
+        TUESDAY(3),
+        WEDNESDAY(4),
+        THURSDAY(5),
+        FRIDAY(6),
+        SATURDAY(7);
+
+        private int value;
+
+        Day(int value) {this.value = value; }
+
+        @Override
+        public String toString() {
+            switch(this) {
+                case FRIDAY:
+                    return "Friday: " + value;
+                case MONDAY:
+                    return "Monday: " + value;
+                case SATURDAY:
+                    return "Saturday: " + value;
+                case SUNDAY:
+                    return "Sunday: " + value;
+                case THURSDAY:
+                    return "Thursday: " + value;
+                case TUESDAY:
+                    return "Tuesday: " + value;
+                case WEDNESDAY:
+                    return "Wednesday: " + value;
+                default:
+                    return null;
+            }
+        }
     }
 }
