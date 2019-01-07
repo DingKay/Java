@@ -2,11 +2,11 @@ package com.dk.enumerate;
 
 /**
  * @author DingKai
- * @Classname ExtendInterfaceEnum
+ * @Classname ImpInterfaceEnum
  * @Description To Learn Enumerate 5:Class Enumerate Can Implements An Interface
  * @create 2019/1/7
  */
-public class ExtendInterfaceEnum {
+public class ImpInterfaceEnum {
     interface interEnum{
         void print();
         String getInfo();
