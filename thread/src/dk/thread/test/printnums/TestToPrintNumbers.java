@@ -3,7 +3,7 @@ package dk.thread.test.printnums;
 /**
  * @author DingKai
  * @Classname TestToPrintNumbers
- * @Description Anonymous Inner Class : To Create Two Thread Then Print A And Print B Separately.
+ * @Description Use Anonymous Inner Class To Create Two Thread Then Print A And Print B Separately.
  * Launch This Class To Test Threads Used Time. Extract Thread Code To Method So As To Measure Time.
  * At Last We Found Degrades Performance When Use Java 8 New Features Lambda Expression.
  * @create 2018-11-23

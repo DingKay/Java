@@ -30,7 +30,7 @@ public class ToTest {
         //01.弱类型  通过命名空间唯一锁定要执行的sql
         // List<Department> list = session.selectList("cn.happy.mapper.getAllDept");
         //02.强类型
-        List<User> list = session.selectList("getAllTest");
+        List<User> list = session.selectList("User.getAllTest");
         for (User test : list) {
             System.out.println(test.getName());
         }
