@@ -25,15 +25,15 @@ public class TestDiff {
     JFrame jFrame = new JFrame("Test");
 
     @ActionListenerAnno(listener = okListener.class)
-    private JButton ok = new JButton("confirm");
+    private JButton okButton = new JButton("confirm");
 
     @ActionListenerAnno(listener = cancel.class)
-    private JButton cancel = new JButton("cancel");
+    private JButton cancelButton = new JButton("cancelButton");
 
     public void init() throws InstantiationException, IllegalAccessException, ClassNotFoundException {
         JPanel jPanel = new JPanel();
-        jPanel.add(ok);
-        jPanel.add(cancel);
+        jPanel.add(okButton);
+        jPanel.add(cancelButton);
         jFrame.add(jPanel);
         ButtonListener.process(this);
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
