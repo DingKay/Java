@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.annotation.*;
+import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 
@@ -11,11 +12,14 @@ import java.lang.reflect.InvocationTargetException;
  * @author DingKai
  * @Classname AnnotationListenerTest
  * @Description                 **** This Java Program Was Wrong ****
- *              The Problem is here : 81 lines ActionListener al = listenerClazz.newInstance();
+ *              The Problem is here : ButtonListener's xx lines ActionListener al = listenerClazz.newInstance();
  *              Because this program is internal Class, Before newInstance() U need had out Class's
  *              Instance.
  *              temporarily unable to solve.
- *              TODO how to solve
+ *              //TODO how to solve
+ *              ===========================
+ *              2019.01.23 :
+ *              Successfully solve the problem !!
  * @create 2019/1/22
  */
 public class AnnotationListenerTest {
@@ -70,6 +74,13 @@ public class AnnotationListenerTest {
 
         static class ButtonListener {
             public static void process(Object obj) throws IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
+                /* Modify 1:
+                * Getting class's Class Object at first*/
+                Class<AnnotationListenerTest> aclazz = AnnotationListenerTest.class;
+                /* Modify 2:
+                * Create an Instance*/
+                AnnotationListenerTest annotationListenerTest = aclazz.newInstance();
+
                 Class clazz = obj.getClass();
                 Field[] declaredFields = clazz.getDeclaredFields();
                 for (Field field : declaredFields) {
@@ -77,12 +88,15 @@ public class AnnotationListenerTest {
                     ActionListenerAnno annotation = field.getAnnotation(ActionListenerAnno.class);
                     Object jButtonObj = field.get(obj);
                     if (annotation !=null && jButtonObj instanceof AbstractButton){
-//                        Constructor constructor = clazz.getConstructor(AnnotationListenerTest.class);
-
                         Class<? extends ActionListener> listener = annotation.listener();
-                        System.out.println("listener = " + listener);
-                        ActionListener actionListener = listener.newInstance();
-                        ((AbstractButton) jButtonObj).addActionListener(actionListener);
+                        /* Modify 3:
+                        * Get DeclaredConstructor and the parameter is aclazz*/
+                        Constructor<? extends ActionListener> declaredConstructor = listener.getDeclaredConstructor(aclazz);
+                        /* Modify 4:
+                        * newInstance Use Constructor*/
+                        ActionListener al1 = declaredConstructor.newInstance(annotationListenerTest);
+
+                        ((AbstractButton) jButtonObj).addActionListener(al1);
                     }
                 }
             }
