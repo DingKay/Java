@@ -70,9 +70,9 @@ public class FindFilePath {
 //        System.out.println("string = " + string);
         File[] roots = File.listRoots();
         for (int i =0; i < roots.length; i++) {
-            System.out.println("未使用:" + roots[i].getFreeSpace()/1024/1024/1024 + "GB");
-            System.out.println("已使用:" + (roots[i].getTotalSpace() - roots[i].getFreeSpace())/1024/1024/1024 + "GB");
-            System.out.println("总容量:" + roots[i].getTotalSpace()/1024/1024/1024 + "GB");
+            System.out.println("Unused:" + roots[i].getFreeSpace()/1024/1024/1024 + "GB");
+            System.out.println("Used:" + (roots[i].getTotalSpace() - roots[i].getFreeSpace())/1024/1024/1024 + "GB");
+            System.out.println("total capacity:" + roots[i].getTotalSpace()/1024/1024/1024 + "GB");
             String string = findFilePath.getFile(roots[i].getPath() + "\\");
         }
         if (findFilePath.isFlag()) {
