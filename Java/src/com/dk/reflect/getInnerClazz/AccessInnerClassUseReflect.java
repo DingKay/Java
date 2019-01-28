@@ -11,6 +11,7 @@ import java.lang.reflect.Modifier;
  * @Description TODO
  * @create 2019/1/23
  */
+@SuppressWarnings({"unchecked",""})
 public class AccessInnerClassUseReflect {
     public static void main(String[] args) throws IllegalAccessException, InstantiationException, NoSuchFieldException, NoSuchMethodException, InvocationTargetException {
         Class clazz = InnerContainer.class;
@@ -23,11 +24,17 @@ public class AccessInnerClassUseReflect {
                 declaredField.setAccessible(true);
                 System.out.println(declaredField.get(o));
             }else{
-                Constructor declaredConstructor = declaredClass.getDeclaredConstructor(AccessInnerClassUseReflect.class);
+                Constructor declaredConstructor = declaredClass.getDeclaredConstructor(clazz);
                 declaredConstructor.setAccessible(true);
-                Object o = declaredConstructor.newInstance(AccessInnerClassUseReflect.class.newInstance());
-                declaredClass.getDeclaredField("field");
+                Object o = declaredConstructor.newInstance(clazz.newInstance());
+                Field field = declaredClass.getDeclaredField("field");
+                field.setAccessible(true);
+                System.out.println(field.get(o));
             }
         }
+        Field field = clazz.getDeclaredField("field");
+        field.setAccessible(true);
+        Runnable o = (Runnable)field.get(clazz.newInstance());
+        o.run();
     }
 }

@@ -70,6 +70,7 @@ public class FindFilePath {
 //        System.out.println("string = " + string);
         File[] roots = File.listRoots();
         for (int i =0; i < roots.length; i++) {
+            System.out.println(roots[i].toString().split(":")[0] + "盘");
             System.out.println("Unused:" + roots[i].getFreeSpace()/1024/1024/1024 + "GB");
             System.out.println("Used:" + (roots[i].getTotalSpace() - roots[i].getFreeSpace())/1024/1024/1024 + "GB");
             System.out.println("total capacity:" + roots[i].getTotalSpace()/1024/1024/1024 + "GB");

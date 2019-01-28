@@ -17,10 +17,10 @@ public class InnerContainer {
         private String field = InnerB.class.getSimpleName();
     }
 
-    private Runnable r = new Runnable() {
+    private Runnable field = new Runnable() {
         @Override
         public void run() {
-            System.out.println("Method run of runnable r");
+            System.out.println("Method run of runnable field");
         }
     };
 }
