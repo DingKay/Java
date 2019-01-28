@@ -16,7 +16,8 @@ import java.lang.reflect.InvocationTargetException;
  *              Because this program is internal Class, Before newInstance() U need had out Class's
  *              Instance.
  *              temporarily unable to solve.
- *              //TODO how to solve
+ *              //TO DO how to solve
+ *              Create a new class {@link TestDiff}
  *              ===========================
  *              2019.01.23 :
  *              Successfully solve the problem !!

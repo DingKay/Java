@@ -9,7 +9,8 @@ import java.lang.reflect.Field;
 /**
  * @author DingKai
  * @Classname AnnotationListenerTest
- * @Description TODO
+ * @Description To solve {@link AnnotationListenerTest} problem
+ *              No use inner class of member variable
  * @create 2019/1/22
  */
 

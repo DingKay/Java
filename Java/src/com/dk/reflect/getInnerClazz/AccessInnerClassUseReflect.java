@@ -11,7 +11,8 @@ import java.lang.reflect.Modifier;
  * @Description TODO
  * @create 2019/1/23
  */
-@SuppressWarnings({"unchecked",""})
+/*rawtypes Passing parameters with generics when passing parameters*/
+@SuppressWarnings({"unchecked","rawtypes"})
 public class AccessInnerClassUseReflect {
     public static void main(String[] args) throws IllegalAccessException, InstantiationException, NoSuchFieldException, NoSuchMethodException, InvocationTargetException {
         Class clazz = InnerContainer.class;
