@@ -7,4 +7,13 @@ package com.dk.listener.person;
  * @create 2019/1/28
  */
 public class Even {
+    private Person person;
+
+    public Even(Person person){
+        this.person = person;
+    }
+
+    public Person getPerson() {
+        return person;
+    }
 }

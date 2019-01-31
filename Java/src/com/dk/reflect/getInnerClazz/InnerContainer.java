@@ -3,7 +3,7 @@ package com.dk.reflect.getInnerClazz;
 /**
  * @author DingKai
  * @Classname InnerContainer
- * @Description TODO
+ * @Description Test get method or field use reflect at runtime.
  * @create 2019/1/23
  */
 public class InnerContainer {
