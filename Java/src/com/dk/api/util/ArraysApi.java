@@ -5,9 +5,10 @@ import java.util.*;
 /**
  * @author DingKai
  * @Classname ArraysApi
- * @Description TODO
+ * @Description To learn Arrays class at util package.
  * @create 2019/1/15
  */
+@SuppressWarnings("unchecked")
 public class ArraysApi {
     private static String abc = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z";
     private static String repeat = "a b c d e f g h i j k l m n o p q r s t u v w x y z";

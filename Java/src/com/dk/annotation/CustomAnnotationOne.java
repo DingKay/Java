@@ -6,10 +6,8 @@ package com.dk.annotation;
  * @Description To Learn Annotation 1: To Defined A CustomAnnotationOne
  * @create 2019/1/8
  */
-public @interface CustomAnnotationOne {
-}
-@interface CustomAnnotationInner{
-}
+public @interface CustomAnnotationOne {}
+@interface CustomAnnotationInner {}
 
 class TestOne{
     @CustomAnnotationOne

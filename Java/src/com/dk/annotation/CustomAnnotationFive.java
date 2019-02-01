@@ -6,7 +6,7 @@ import java.lang.reflect.Method;
 /**
  * @author DingKai
  * @Classname CustomAnnotationFive
- * @Description TODO
+ * @Description To Learn Annotation.
  * @create 2019/1/21
  */
 public class CustomAnnotationFive {

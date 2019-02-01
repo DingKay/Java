@@ -3,7 +3,7 @@ package com.dk.annotation;
 /**
  * @author DingKai
  * @Classname CustomAnnotationTwo
- * @Description TODO
+ * @Description To learn annotation : Input parameter in annotation
  * @create 2019/1/8
  */
 public @interface CustomAnnotationTwo {
