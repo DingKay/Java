@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.dk.designPatterns.design_patterns_duck.Duck</OriginalElement>
+  <nodes>
+    <node x="963.1559895833334" y="396.0">com.dk.utils.DK</node>
+    <node x="875.0" y="193.0">com.dk.designPatterns.design_patterns_duck.interf_imp.FlyNoWay</node>
+    <node x="771.4684895833333" y="0.0">com.dk.designPatterns.design_patterns_duck.interf.FlyBehavior</node>
+    <node x="1013.0" y="193.0">com.dk.designPatterns.design_patterns_duck.interf_imp.FlyRocketPowered</node>
+    <node x="324.21848958333334" y="0.0">com.dk.designPatterns.design_patterns_duck.interf.QuackBehavior</node>
+    <node x="480.00000000000006" y="193.0">com.dk.designPatterns.design_patterns_duck.interf_imp.FlyWithWings</node>
+    <node x="343.00000000000006" y="157.0">com.dk.designPatterns.design_patterns_duck.interf_imp.Quack</node>
+    <node x="0.0" y="193.0">com.dk.designPatterns.design_patterns_duck.interf_imp.Squeak</node>
+    <node x="453.3106770833334" y="407.5">com.dk.designPatterns.design_patterns_duck.MallardDuck</node>
+    <node x="625.0" y="123.0">com.dk.designPatterns.design_patterns_duck.Duck</node>
+    <node x="160.00000000000006" y="193.0">com.dk.designPatterns.design_patterns_duck.interf_imp.MuteQuack</node>
+    <node x="682.7809895833334" y="532.0">com.dk.designPatterns.design_patterns_duck.MiniDuckSimulator</node>
+    <node x="778.25" y="407.5">com.dk.designPatterns.design_patterns_duck.ModelDuck</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.dk.designPatterns.design_patterns_duck.Duck" target="com.dk.designPatterns.design_patterns_duck.interf.QuackBehavior">
+      <point x="-28.750000000000057" y="-96.5" />
+      <point x="711.25" y="73.0" />
+      <point x="450.21848958333334" y="73.0" />
+      <point x="56.0" y="26.5" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_duck.MiniDuckSimulator" target="com.dk.designPatterns.design_patterns_duck.interf_imp.MuteQuack">
+      <point x="-72.91666666666674" y="-26.5" />
+      <point x="697.3643229166667" y="512.0" />
+      <point x="230.00000000000006" y="512.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_duck.ModelDuck" target="com.dk.designPatterns.design_patterns_duck.Duck">
+      <point x="-18.375" y="-26.5" />
+      <point x="833.375" y="346.0" />
+      <point x="786.0" y="346.0" />
+      <point x="46.0" y="96.5" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_duck.ModelDuck" target="com.dk.designPatterns.design_patterns_duck.interf_imp.FlyNoWay">
+      <point x="55.125" y="-26.5" />
+      <point x="906.875" y="376.0" />
+      <point x="904.5" y="376.0" />
+      <point x="-29.5" y="26.5" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_duck.MiniDuckSimulator" target="com.dk.designPatterns.design_patterns_duck.interf_imp.FlyNoWay">
+      <point x="43.75" y="-26.5" />
+      <point x="814.0309895833334" y="502.0" />
+      <point x="952.6559895833334" y="502.0" />
+      <point x="952.6559895833334" y="376.0" />
+      <point x="963.5" y="376.0" />
+      <point x="29.5" y="26.5" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_duck.MallardDuck" target="com.dk.designPatterns.design_patterns_duck.Duck">
+      <point x="57.75" y="-26.5" />
+      <point x="588.0606770833334" y="376.0" />
+      <point x="694.0" y="376.0" />
+      <point x="-46.0" y="96.5" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_duck.MiniDuckSimulator" target="com.dk.designPatterns.design_patterns_duck.Duck">
+      <point x="-14.583333333333371" y="-26.5" />
+      <point x="755.69765625" y="512.0" />
+      <point x="740.0" y="512.0" />
+      <point x="0.0" y="96.5" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_duck.interf_imp.MuteQuack" target="com.dk.designPatterns.design_patterns_duck.interf.QuackBehavior">
+      <point x="0.0" y="-26.5" />
+      <point x="230.00000000000006" y="103.0" />
+      <point x="366.21848958333334" y="103.0" />
+      <point x="-28.0" y="26.5" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_duck.MiniDuckSimulator" target="com.dk.designPatterns.design_patterns_duck.MallardDuck">
+      <point x="-43.75" y="-26.5" />
+      <point x="726.5309895833334" y="502.0" />
+      <point x="530.3106770833334" y="502.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_duck.MallardDuck" target="com.dk.designPatterns.design_patterns_duck.interf_imp.Quack">
+      <point x="-57.75" y="-26.5" />
+      <point x="472.5606770833334" y="376.0" />
+      <point x="355.00000000000006" y="376.0" />
+      <point x="-35.0" y="26.5" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_duck.MallardDuck" target="com.dk.designPatterns.design_patterns_duck.interf_imp.FlyWithWings">
+      <point x="-19.25" y="-26.5" />
+      <point x="511.0606770833334" y="376.0" />
+      <point x="542.5" y="376.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_duck.Duck" target="com.dk.designPatterns.design_patterns_duck.interf.FlyBehavior">
+      <point x="28.749999999999943" y="-96.5" />
+      <point x="768.75" y="103.0" />
+      <point x="806.8684895833333" y="103.0" />
+      <point x="-23.600000000000023" y="26.5" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_duck.interf_imp.FlyWithWings" target="com.dk.designPatterns.design_patterns_duck.interf.FlyBehavior">
+      <point x="0.0" y="-26.5" />
+      <point x="542.5" y="93.0" />
+      <point x="783.2684895833333" y="93.0" />
+      <point x="-47.19999999999999" y="26.5" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_duck.MiniDuckSimulator" target="com.dk.utils.DK">
+      <point x="72.91666666666663" y="-26.5" />
+      <point x="843.19765625" y="512.0" />
+      <point x="1057.6559895833334" y="512.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_duck.interf_imp.Quack" target="com.dk.designPatterns.design_patterns_duck.interf.QuackBehavior">
+      <point x="0.0" y="-26.5" />
+      <point x="390.00000000000006" y="103.0" />
+      <point x="394.21848958333334" y="103.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_duck.interf_imp.FlyRocketPowered" target="com.dk.designPatterns.design_patterns_duck.interf.FlyBehavior">
+      <point x="0.0" y="-26.5" />
+      <point x="1090.0" y="93.0" />
+      <point x="877.6684895833333" y="93.0" />
+      <point x="47.19999999999999" y="26.5" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_duck.ModelDuck" target="com.dk.designPatterns.design_patterns_duck.interf_imp.Quack">
+      <point x="-55.125" y="-26.5" />
+      <point x="796.625" y="356.0" />
+      <point x="425.00000000000006" y="356.0" />
+      <point x="35.0" y="26.5" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_duck.MiniDuckSimulator" target="com.dk.designPatterns.design_patterns_duck.ModelDuck">
+      <point x="14.583333333333371" y="-26.5" />
+      <point x="784.8643229166668" y="492.0" />
+      <point x="851.75" y="492.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_duck.interf_imp.Squeak" target="com.dk.designPatterns.design_patterns_duck.interf.QuackBehavior">
+      <point x="0.0" y="-26.5" />
+      <point x="70.0" y="93.0" />
+      <point x="338.21848958333334" y="93.0" />
+      <point x="-56.0" y="26.5" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_duck.interf_imp.FlyNoWay" target="com.dk.designPatterns.design_patterns_duck.interf.FlyBehavior">
+      <point x="0.0" y="-26.5" />
+      <point x="934.0" y="103.0" />
+      <point x="854.0684895833333" y="103.0" />
+      <point x="23.600000000000023" y="26.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="572.5" y="381.0" />
+  <SelectedNodes>
+    <node>com.dk.designPatterns.design_patterns_duck.interf_imp.Quack</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
