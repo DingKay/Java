@@ -1,4 +1,4 @@
-package com.dk.designPatterns.design_patterns_weather.customize;
+package com.dk.designPatterns.design_patterns_weather.jdk_util;
 
 /**
  * @author DingKai
@@ -10,9 +10,9 @@ public class WeatherStation {
     public static void main(String[] args) {
         WeatherData weatherData = new WeatherData();
 
-        CurrentConditionsDisplay currentConditionsDisplay = new CurrentConditionsDisplay(weatherData);
+        GeneralDisplay generalDisplay = new GeneralDisplay(weatherData);
         StatisticDisplay statisticDisplay = new StatisticDisplay(weatherData);
         ForecastDisplay forecastDisplay = new ForecastDisplay(weatherData);
-        weatherData.setMeasurements(80,65,30.4f);
+        weatherData.setMeasurements(33,44,55);
     }
 }

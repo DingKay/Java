@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.dk.designPatterns.design_patterns_weather.jdk_util.WeatherStation</OriginalElement>
+  <nodes>
+    <node x="310.66666666666663" y="0.0">java.util.Observer</node>
+    <node x="474.0257936507936" y="937.0">com.dk.designPatterns.design_patterns_weather.jdk_util.WeatherStation</node>
+    <node x="0.0" y="708.5">com.dk.designPatterns.design_patterns_weather.jdk_util.StatisticDisplay</node>
+    <node x="641.6507936507937" y="697.0">com.dk.designPatterns.design_patterns_weather.jdk_util.GeneralDisplay</node>
+    <node x="278.0" y="708.5">com.dk.designPatterns.design_patterns_weather.jdk_util.ForecastDisplay</node>
+    <node x="357.9801587301587" y="103.0">java.util.Observable</node>
+    <node x="441.24305555555554" y="501.0">com.dk.designPatterns.design_patterns_weather.jdk_util.WeatherData</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="java.util.Observer" target="java.util.Observable">
+      <point x="64.5" y="26.5" />
+      <point x="504.16666666666663" y="83.0" />
+      <point x="565.4801587301587" y="83.0" />
+      <point x="83.0" y="-154.0" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_weather.jdk_util.WeatherStation" target="com.dk.designPatterns.design_patterns_weather.jdk_util.StatisticDisplay">
+      <point x="-54.6875" y="-26.5" />
+      <point x="506.8382936507936" y="907.0" />
+      <point x="193.5" y="907.0" />
+      <point x="64.5" y="73.5" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_weather.jdk_util.ForecastDisplay" target="java.util.Observable">
+      <point x="32.25" y="-73.5" />
+      <point x="439.25" y="667.0" />
+      <point x="430.61805555555554" y="667.0" />
+      <point x="430.61805555555554" y="481.0" />
+      <point x="482.4801587301587" y="481.0" />
+      <point x="0.0" y="154.0" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_weather.jdk_util.GeneralDisplay" target="java.util.Observer">
+      <point x="96.75" y="-85.0" />
+      <point x="867.4007936507937" y="667.0" />
+      <point x="806.1180555555557" y="667.0" />
+      <point x="806.1180555555557" y="73.0" />
+      <point x="547.1666666666666" y="73.0" />
+      <point x="107.5" y="26.5" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_weather.jdk_util.StatisticDisplay" target="com.dk.designPatterns.design_patterns_weather.jdk_util.WeatherData">
+      <point x="96.75" y="-73.5" />
+      <point x="225.75" y="677.0" />
+      <point x="471.24305555555554" y="677.0" />
+      <point x="-120.0" y="73.0" />
+    </edge>
+    <edge source="java.util.Observable" target="java.util.Observable">
+      <point x="-110.66666666666667" y="154.0" />
+      <point x="371.81349206349205" y="431.0" />
+      <point x="337.9801587301587" y="431.0" />
+      <point x="337.9801587301587" y="257.0" />
+      <point x="-124.5" y="-0.0" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_weather.jdk_util.ForecastDisplay" target="com.dk.designPatterns.design_patterns_weather.jdk_util.WeatherData">
+      <point x="96.75" y="-73.5" />
+      <point x="503.75" y="677.0" />
+      <point x="531.2430555555555" y="677.0" />
+      <point x="-60.0" y="73.0" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_weather.jdk_util.ForecastDisplay" target="java.util.Observer">
+      <point x="-96.75" y="-73.5" />
+      <point x="310.25" y="667.0" />
+      <point x="326.16666666666663" y="667.0" />
+      <point x="326.16666666666663" y="83.0" />
+      <point x="375.16666666666663" y="83.0" />
+      <point x="-64.5" y="26.5" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_weather.jdk_util.WeatherStation" target="com.dk.designPatterns.design_patterns_weather.jdk_util.ForecastDisplay">
+      <point x="-10.9375" y="-26.5" />
+      <point x="550.5882936507936" y="887.0" />
+      <point x="471.5" y="887.0" />
+      <point x="64.5" y="73.5" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_weather.jdk_util.WeatherData" target="java.util.Observable">
+      <point x="75.0" y="-73.0" />
+      <point x="666.2430555555555" y="481.0" />
+      <point x="537.813492063492" y="481.0" />
+      <point x="55.33333333333337" y="154.0" />
+    </edge>
+    <edge source="java.util.Observable" target="java.util.Observer">
+      <point x="0.0" y="-154.0" />
+      <point x="482.4801587301587" y="83.0" />
+      <point x="461.16666666666663" y="83.0" />
+      <point x="21.5" y="26.5" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_weather.jdk_util.GeneralDisplay" target="com.dk.designPatterns.design_patterns_weather.jdk_util.WeatherData">
+      <point x="-96.75" y="-85.0" />
+      <point x="673.9007936507937" y="677.0" />
+      <point x="711.2430555555555" y="677.0" />
+      <point x="120.0" y="73.0" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_weather.jdk_util.StatisticDisplay" target="java.util.Observer">
+      <point x="-96.75" y="-73.5" />
+      <point x="32.25" y="667.0" />
+      <point x="92.00396825396825" y="667.0" />
+      <point x="92.00396825396825" y="73.0" />
+      <point x="332.16666666666663" y="73.0" />
+      <point x="-107.5" y="26.5" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_weather.jdk_util.StatisticDisplay" target="java.util.Observable">
+      <point x="32.25" y="-73.5" />
+      <point x="161.25" y="677.0" />
+      <point x="114.00396825396825" y="677.0" />
+      <point x="114.00396825396825" y="461.0" />
+      <point x="427.1468253968254" y="461.0" />
+      <point x="-55.333333333333314" y="154.0" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_weather.jdk_util.GeneralDisplay" target="java.util.Observable">
+      <point x="-32.25" y="-85.0" />
+      <point x="738.4007936507937" y="677.0" />
+      <point x="784.1180555555557" y="677.0" />
+      <point x="784.1180555555557" y="471.0" />
+      <point x="565.4801587301587" y="471.0" />
+      <point x="83.0" y="154.0" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_weather.jdk_util.WeatherStation" target="com.dk.designPatterns.design_patterns_weather.jdk_util.GeneralDisplay">
+      <point x="76.5625" y="-26.5" />
+      <point x="638.0882936507936" y="917.0" />
+      <point x="835.1507936507937" y="917.0" />
+      <point x="64.5" y="85.0" />
+    </edge>
+    <edge source="com.dk.designPatterns.design_patterns_weather.jdk_util.WeatherStation" target="com.dk.designPatterns.design_patterns_weather.jdk_util.WeatherData">
+      <point x="32.8125" y="-26.5" />
+      <point x="594.3382936507936" y="917.0" />
+      <point x="610.0257936507936" y="917.0" />
+      <point x="610.0257936507936" y="677.0" />
+      <point x="651.2430555555555" y="677.0" />
+      <point x="60.0" y="73.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="441.49999999999983" y="463.49999999999994" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
