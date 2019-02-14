@@ -1,4 +1,4 @@
-package com.dk.designPatterns.design_patterns_weather.inerf;
+package com.dk.designPatterns.design_patterns_weather.customize.inerf;
 
 /**
  * @author DingKai
