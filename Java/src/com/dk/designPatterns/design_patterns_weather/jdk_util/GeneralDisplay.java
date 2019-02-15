@@ -10,7 +10,7 @@ import java.util.Observer;
 /**
  * @author DingKai
  * @Classname GeneralDisplay
- * @Description TODO
+ * @Description Observer
  * @create 2019/2/14
  */
 public class GeneralDisplay implements Observer, DisplayElement {

@@ -8,7 +8,7 @@ import java.util.ArrayList;
 /**
  * @author DingKai
  * @Classname WeatherData
- * @Description TODO
+ * @Description Observable
  * @create 2019/2/13
  */
 public class WeatherData implements Subject {

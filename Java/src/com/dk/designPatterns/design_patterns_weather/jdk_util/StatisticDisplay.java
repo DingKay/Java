@@ -7,8 +7,8 @@ import java.util.Observer;
 
 /**
  * @author DingKai
- * @Classname StatictisDisplay
- * @Description TODO
+ * @Classname StatisticDisplay
+ * @Description Observer
  * @create 2019/2/14
  */
 public class StatisticDisplay implements DisplayElement, Observer {

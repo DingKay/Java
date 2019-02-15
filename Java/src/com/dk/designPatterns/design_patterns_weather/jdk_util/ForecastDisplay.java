@@ -8,7 +8,7 @@ import java.util.Observer;
 /**
  * @author DingKai
  * @Classname ForecastDisplay
- * @Description TODO
+ * @Description Observer
  * @create 2019/2/14
  */
 public class ForecastDisplay implements Observer, DisplayElement {

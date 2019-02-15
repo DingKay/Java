@@ -7,7 +7,7 @@ import com.dk.designPatterns.design_patterns_weather.customize.inerf.Subject;
 /**
  * @author DingKai
  * @Classname CurrentConditionsDisplay
- * @Description TODO
+ * @Description Observer
  * @create 2019/2/14
  */
 public class CurrentConditionsDisplay implements DisplayElement, Observer {

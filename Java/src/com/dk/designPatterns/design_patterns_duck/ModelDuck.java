@@ -6,10 +6,11 @@ import com.dk.designPatterns.design_patterns_duck.interf_imp.Quack;
 /**
  * @author DingKai
  * @Classname ModelDuck
- * @Description TODO
+ * @Description Concrete implementation class
  * @create 2019/2/11
  */
 public class ModelDuck extends Duck {
+
     ModelDuck(){
         flyBehavior = new FlyNoWay();
         quackBehavior = new Quack();

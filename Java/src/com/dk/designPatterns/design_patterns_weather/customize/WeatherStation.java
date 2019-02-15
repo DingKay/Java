@@ -3,7 +3,7 @@ package com.dk.designPatterns.design_patterns_weather.customize;
 /**
  * @author DingKai
  * @Classname WeatherStation
- * @Description TODO
+ * @Description Test Weather screen
  * @create 2019/2/14
  */
 public class WeatherStation {
