@@ -10,6 +10,9 @@ public class WeatherStation {
     public static void main(String[] args) {
         WeatherData weatherData = new WeatherData();
 
+        /*the console print order is different from customize observer
+        * because the observable is a class, notifyObservers(arg) method
+        * cycle reverse order, violation interface oriented programming*/
         GeneralDisplay generalDisplay = new GeneralDisplay(weatherData);
         StatisticDisplay statisticDisplay = new StatisticDisplay(weatherData);
         ForecastDisplay forecastDisplay = new ForecastDisplay(weatherData);

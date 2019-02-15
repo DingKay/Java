@@ -5,7 +5,7 @@ import java.util.Observable;
 /**
  * @author DingKai
  * @Classname WeatherData
- * @Description Observable
+ * @Description Observable :registerObserver, removeObserver, notifyObserver is achieve from supertype
  * @create 2019/2/14
  */
 public class WeatherData extends Observable {
