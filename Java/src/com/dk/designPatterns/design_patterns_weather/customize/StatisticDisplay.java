@@ -7,7 +7,7 @@ import com.dk.designPatterns.design_patterns_weather.customize.inerf.Subject;
 /**
  * @author DingKai
  * @Classname StatisticDisplay
- * @Description Observer
+ * @Description ProgressObserver
  * @create 2019/2/14
  */
 public class StatisticDisplay implements DisplayElement, Observer {

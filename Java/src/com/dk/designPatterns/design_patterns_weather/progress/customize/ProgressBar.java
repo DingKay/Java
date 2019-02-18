@@ -1,7 +1,7 @@
-package com.dk.designPatterns.design_patterns_weather.progress;
+package com.dk.designPatterns.design_patterns_weather.progress.customize;
 
-import com.dk.designPatterns.design_patterns_weather.progress.interf.Observer;
-import com.dk.designPatterns.design_patterns_weather.progress.interf_impl.Observable;
+import com.dk.designPatterns.design_patterns_weather.progress.customize.interf.Observer;
+import com.dk.designPatterns.design_patterns_weather.progress.customize.interf_impl.Observable;
 
 /**
  * @author DingKai

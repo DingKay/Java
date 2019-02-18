@@ -2,8 +2,8 @@ package com.dk.designPatterns.design_patterns_weather.customize.inerf;
 
 /**
  * @author DingKai
- * @Classname Observer
- * @Description interface : Observer
+ * @Classname ProgressObserver
+ * @Description interface : ProgressObserver
  * @create 2019/2/13
  */
 public interface Observer {

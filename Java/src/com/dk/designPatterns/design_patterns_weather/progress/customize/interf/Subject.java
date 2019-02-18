@@ -1,4 +1,4 @@
-package com.dk.designPatterns.design_patterns_weather.progress.interf;
+package com.dk.designPatterns.design_patterns_weather.progress.customize.interf;
 
 /**
  * @author DingKai

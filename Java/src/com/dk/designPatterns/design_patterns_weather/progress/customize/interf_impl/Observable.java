@@ -1,7 +1,7 @@
-package com.dk.designPatterns.design_patterns_weather.progress.interf_impl;
+package com.dk.designPatterns.design_patterns_weather.progress.customize.interf_impl;
 
-import com.dk.designPatterns.design_patterns_weather.progress.interf.Observer;
-import com.dk.designPatterns.design_patterns_weather.progress.interf.Subject;
+import com.dk.designPatterns.design_patterns_weather.progress.customize.interf.Observer;
+import com.dk.designPatterns.design_patterns_weather.progress.customize.interf.Subject;
 
 import java.util.ArrayList;
 
