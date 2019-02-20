@@ -1,6 +1,7 @@
 package com.dk.designPatterns.design_patterns_coffee.decorate;
 
 import com.dk.designPatterns.design_patterns_coffee.abst.Beverage;
+import com.dk.designPatterns.design_patterns_coffee.abst.CondimentDecorator;
 
 /**
  * @author DingKai
@@ -8,7 +9,7 @@ import com.dk.designPatterns.design_patterns_coffee.abst.Beverage;
  * @Description TODO
  * @create 2019/2/19
  */
-public class Soy extends Beverage {
+public class Soy extends CondimentDecorator {
     Beverage beverage;
 
     @Override

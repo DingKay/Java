@@ -10,7 +10,7 @@ import com.dk.designPatterns.design_patterns_coffee.abst.Beverage;
  */
 public class Espresso extends Beverage {
     public Espresso() {
-        description = "asd";
+        description = "Espresso";
     }
 
     @Override
