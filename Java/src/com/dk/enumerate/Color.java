@@ -1,5 +1,7 @@
 package com.dk.enumerate;
 
+import com.dk.utils.DK;
+
 /**
  * @author DingKai
  * @Classname Color
@@ -21,5 +23,12 @@ class Test{
         //1.Enumerate Constant
         System.out.println("red ==> " + Color.RED + "\n" + "blue ==> " + Color.BLUE);
         System.out.println("green ==> " + Color.GREEN + "\n" + "yellow ==> " + Color.YELLOW);
+
+        DK.printEqualSign();
+
+        Color color = Color.BLUE;
+        DK.print(color.toString());
+        color = Color.RED;
+        DK.print(color.toString());
     }
 }

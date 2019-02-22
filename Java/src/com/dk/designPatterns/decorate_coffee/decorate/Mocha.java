@@ -10,8 +10,6 @@ import com.dk.designPatterns.decorate_coffee.abst.CondimentDecorator;
  * @create 2019/2/19
  */
 public class Mocha extends CondimentDecorator {
-    Beverage beverage;
-
     public Mocha(Beverage beverage) {
         this.beverage = beverage;
     }

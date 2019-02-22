@@ -10,8 +10,6 @@ import com.dk.designPatterns.decorate_coffee.abst.CondimentDecorator;
  * @create 2019/2/19
  */
 public class Whip extends CondimentDecorator {
-    Beverage beverage;
-
     @Override
     public double cost() {
         return beverage.cost() + 0.30D;

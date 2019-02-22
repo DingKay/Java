@@ -2,7 +2,9 @@ package com.dk.designPatterns.decorate_coffee;
 
 import com.dk.designPatterns.decorate_coffee.abst.Beverage;
 import com.dk.designPatterns.decorate_coffee.decorate.Mocha;
+import com.dk.designPatterns.decorate_coffee.decorate.Soy;
 import com.dk.designPatterns.decorate_coffee.decorate.Whip;
+import com.dk.utils.DK;
 
 /**
  * @author DingKai
@@ -13,13 +15,27 @@ import com.dk.designPatterns.decorate_coffee.decorate.Whip;
 public class StarBuzzCoffee {
     public static void main(String[] args) {
         Beverage beverage = new Espresso();
-        System.out.println(beverage.getDescription() + " $" + beverage.cost());
+        DK.print(beverage.getDescription() + " $" + beverage.cost());
+
+        DK.printEqualSign();
 
         Beverage beverage2 = new HouseBlend();
         beverage2 = new Mocha(beverage2);
         beverage2 = new Mocha(beverage2);
         beverage2 = new Whip(beverage2);
 
-        System.out.println(beverage2.getDescription() + " $" + beverage2.cost());
+        DK.print(beverage2.getDescription() + " $" + beverage2.cost());
+
+        DK.printEqualSign();
+
+        /*BlackCoffee : Adding
+        * Soy milk, default cup --> $1.15
+        * now, choose venti cup --> $1.25*/
+        Beverage beverage3 = new BlackCoffee();
+        beverage3.setSize(Beverage.Size.VENTI);
+        beverage3 = new Soy(beverage3);
+        beverage3 = new Whip(beverage3);
+
+        DK.print(beverage3.getDescription() + " $" + beverage3.cost());
     }
 }

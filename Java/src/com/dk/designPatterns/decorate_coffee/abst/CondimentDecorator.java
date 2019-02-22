@@ -7,5 +7,6 @@ package com.dk.designPatterns.decorate_coffee.abst;
  * @create 2019/2/19
  */
 public abstract class CondimentDecorator extends Beverage {
+    public Beverage beverage;
     public abstract String getDescription();
 }

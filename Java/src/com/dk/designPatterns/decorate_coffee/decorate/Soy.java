@@ -10,16 +10,24 @@ import com.dk.designPatterns.decorate_coffee.abst.CondimentDecorator;
  * @create 2019/2/19
  */
 public class Soy extends CondimentDecorator {
-    Beverage beverage;
-
     @Override
     public double cost() {
-        return beverage.cost() + .10D;
+        double cost = beverage.cost();
+        /*JDK support switch statement use enumerate*/
+        switch (beverage.getSize()){
+            case TALL: cost += .10D;
+            break;
+            case GRANDE: cost += .15D;
+            break;
+            case VENTI: cost += .20D;
+            break;
+        }
+        return cost;
     }
 
     @Override
     public String getDescription() {
-        return beverage.getDescription() + ", Soy";
+        return beverage.getDescription() + ", " + beverage.size + " Soy";
     }
 
     public Soy(Beverage beverage) {
