@@ -8,7 +8,7 @@ import java.util.ArrayList;
 /**
  * @author DingKai
  * @Classname Observable
- * @Description TODO
+ * @Description Observable
  * @create 2019/2/15
  */
 public class Observable implements Subject {

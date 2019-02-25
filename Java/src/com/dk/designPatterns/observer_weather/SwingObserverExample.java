@@ -8,7 +8,7 @@ import java.awt.event.ActionListener;
 /**
  * @author DingKai
  * @Classname SwingObserverExample
- * @Description TODO
+ * @Description TODO Swing to learn
  * @create 2019/2/19
  */
 public class SwingObserverExample {

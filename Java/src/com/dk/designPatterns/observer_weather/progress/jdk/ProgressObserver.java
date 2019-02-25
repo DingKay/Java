@@ -6,7 +6,7 @@ import java.util.Observer;
 /**
  * @author DingKai
  * @Classname ProgressObserver
- * @Description TODO
+ * @Description Achieve Observable
  * @create 2019/2/18
  */
 public class ProgressObserver implements Observer {

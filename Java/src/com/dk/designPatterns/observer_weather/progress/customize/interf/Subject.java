@@ -3,7 +3,7 @@ package com.dk.designPatterns.observer_weather.progress.customize.interf;
 /**
  * @author DingKai
  * @Classname Subject
- * @Description TODO
+ * @Description Observer
  * @create 2019/2/15
  */
 public interface Subject {

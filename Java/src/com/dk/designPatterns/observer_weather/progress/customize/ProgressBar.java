@@ -6,7 +6,7 @@ import com.dk.designPatterns.observer_weather.progress.customize.interf_impl.Obs
 /**
  * @author DingKai
  * @Classname ProgressBar
- * @Description TODO
+ * @Description Achieve Observer
  * @create 2019/2/15
  */
 public class ProgressBar implements Observer {

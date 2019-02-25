@@ -5,7 +5,7 @@ import java.util.Observable;
 /**
  * @author DingKai
  * @Classname Subject
- * @Description TODO
+ * @Description Override Observable
  * @create 2019/2/18
  */
 public class Subject extends Observable {
