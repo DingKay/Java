@@ -5,7 +5,7 @@ import com.dk.designPatterns.decorate_coffee.abst.Beverage;
 /**
  * @author DingKai
  * @Classname BlackCoffee
- * @Description TODO
+ * @Description Drink of blackCoffee
  * @create 2019/2/22
  */
 public class BlackCoffee extends Beverage {

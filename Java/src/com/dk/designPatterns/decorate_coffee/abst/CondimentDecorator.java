@@ -3,7 +3,7 @@ package com.dk.designPatterns.decorate_coffee.abst;
 /**
  * @author DingKai
  * @Classname CondimentDecorator
- * @Description TODO
+ * @Description The abstract class Condiment
  * @create 2019/2/19
  */
 public abstract class CondimentDecorator extends Beverage {

@@ -6,7 +6,7 @@ import com.dk.designPatterns.decorate_coffee.abst.CondimentDecorator;
 /**
  * @author DingKai
  * @Classname Mocha
- * @Description TODO
+ * @Description The Condiment of Mocha
  * @create 2019/2/19
  */
 public class Mocha extends CondimentDecorator {

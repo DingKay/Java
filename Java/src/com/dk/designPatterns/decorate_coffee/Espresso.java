@@ -5,7 +5,7 @@ import com.dk.designPatterns.decorate_coffee.abst.Beverage;
 /**
  * @author DingKai
  * @Classname Espresso
- * @Description TODO
+ * @Description Drink of Espresso
  * @create 2019/2/19
  */
 public class Espresso extends Beverage {

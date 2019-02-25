@@ -6,7 +6,7 @@ import com.dk.designPatterns.decorate_coffee.abst.CondimentDecorator;
 /**
  * @author DingKai
  * @Classname Whip
- * @Description TODO
+ * @Description milk foam.. of whip
  * @create 2019/2/19
  */
 public class Whip extends CondimentDecorator {

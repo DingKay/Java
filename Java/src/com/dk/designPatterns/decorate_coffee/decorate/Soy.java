@@ -6,7 +6,7 @@ import com.dk.designPatterns.decorate_coffee.abst.CondimentDecorator;
 /**
  * @author DingKai
  * @Classname Soy
- * @Description TODO
+ * @Description The Condiment of Soy milk
  * @create 2019/2/19
  */
 public class Soy extends CondimentDecorator {
