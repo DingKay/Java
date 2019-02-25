@@ -9,7 +9,7 @@ import java.io.InputStream;
 /**
  * @author DingKai
  * @Classname UpperCaseInputStream
- * @Description TODO
+ * @Description decorate patterns : extends FilterInputStream.
  * @create 2019/2/25
  */
 public class UpperCaseInputStream extends FilterInputStream {
