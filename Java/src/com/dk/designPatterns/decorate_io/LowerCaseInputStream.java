@@ -1,4 +1,4 @@
-package com.dk.designPatterns.strategy_io;
+package com.dk.designPatterns.decorate_io;
 
 import org.jetbrains.annotations.NotNull;
 
