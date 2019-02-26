@@ -32,8 +32,15 @@ public class StarBuzzCoffee {
         * Soy milk, default cup --> $1.15
         * now, choose venti cup --> $1.25*/
         Beverage beverage3 = new BlackCoffee();
+        /*Test : beverage3 at below is not the same*/
+        Beverage temp = beverage3;
+        /*must be true*/
+        DK.print(temp == beverage3);
         beverage3.setSize(Beverage.Size.VENTI);
         beverage3 = new Soy(beverage3);
+        /*not the same object , is 'false'
+        * the below same reason*/
+        DK.print(temp == beverage3);
         beverage3 = new Whip(beverage3);
 
         DK.print(beverage3.getDescription() + " $" + beverage3.cost());

@@ -17,4 +17,8 @@ public class DK {
     public static void print(String detal){
         System.out.println("\n" + detal + "\n");
     }
+
+    public static void print(boolean b) {
+        System.out.println("\n" + b + "\n");
+    }
 }
