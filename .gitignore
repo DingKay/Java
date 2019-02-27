@@ -5,5 +5,6 @@ out
 gen
 target
 !pom.xml
-!database.properties
 *.properties
+# under * 
+!database.properties
