@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 /**
  * @author DingKai
  * @Classname WelcomePage
- * @Description TODO
+ * @Description Welcome Controller
  * @create 2019/2/27
  */
 @Controller
