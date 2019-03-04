@@ -1,5 +1,7 @@
 package com.dk.mvc.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -13,10 +15,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 @Controller
 public class WelcomePage {
+    static Logger logger = LoggerFactory.getLogger(WelcomePage.class);
+
     @ResponseBody
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public String Welcome(){
-        System.out.println("action hello");
+        logger.info("'hello' controller");
         return "Welcome.";
     }
 }
