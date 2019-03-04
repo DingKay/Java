@@ -8,3 +8,4 @@ target
 *.properties
 # under * 
 !database.properties
+!log4j.properties
