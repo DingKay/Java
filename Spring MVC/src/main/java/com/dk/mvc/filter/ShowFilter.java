@@ -8,6 +8,7 @@ import javax.servlet.*;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
+import java.util.Enumeration;
 
 /**
  * @author DingKai
@@ -35,6 +36,12 @@ public class ShowFilter implements Filter {
         Cookie[] cookies = httpServlet.getCookies();
         String requestURI = httpServlet.getRequestURI();
         String method = httpServlet.getMethod();
+        Enumeration<String> headerNames = httpServlet.getHeaderNames();
+        while (headerNames.hasMoreElements()){
+            String s = headerNames.nextElement();
+            String header = httpServlet.getHeader(s);
+            logger.info(s + " ==> " +header);
+        }
 
         logger.info("protocol :" + protocol + "\ncookies :" + cookies +
                 "\nrequestURI :" + requestURI + "\nmethod :" + method);
