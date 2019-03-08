@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * @author DingKai
  * @Classname WelcomePage
- * @Description Welcome Controller
+ * @Description Welcome controller
  * @create 2019/2/27
  */
 @Controller
@@ -21,7 +21,7 @@ public class WelcomePage {
 
     @ResponseBody
     @RequestMapping(value = "/hello", method = RequestMethod.POST)
-    public String Welcome(@RequestParam("name") String name , HttpServletRequest request){
+    public String welcome(@RequestParam("name") String name , HttpServletRequest request){
         /*解决中文乱码:
         try {
             //设置强制转码
