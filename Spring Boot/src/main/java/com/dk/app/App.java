@@ -1,4 +1,4 @@
-package com.dk.controller;
+package com.dk.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
