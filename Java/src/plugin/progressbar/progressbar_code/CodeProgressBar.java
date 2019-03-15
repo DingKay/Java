@@ -1,4 +1,4 @@
-package plugin.progressBar_code;
+package plugin.progressbar.progressbar_code;
 
 /**
  * @author DingKai
