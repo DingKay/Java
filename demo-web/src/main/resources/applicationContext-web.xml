@@ -17,6 +17,7 @@
             <!--</bean>-->
         <!--</mvc:message-converters>-->
     </mvc:annotation-driven>
+    <context:property-placeholder location="classpath:zookeeper.properties"/>
     <!-- 引用dubbo 服务 -->
     <dubbo:application name="demo-web" />
     <dubbo:registry address="zookeeper://101.132.76.246:2181"/>
