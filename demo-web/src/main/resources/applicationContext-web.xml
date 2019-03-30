@@ -10,11 +10,12 @@
 
     <mvc:annotation-driven>
         <!--Controller return String ,this config equals @ResponseBody-->
-        <mvc:message-converters register-defaults="false">
-            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
-                <constructor-arg value="UTF-8" />
-            </bean>
-        </mvc:message-converters>
+        <!--but is not available. then i'm add @ResponseBody annotation at UserAction class -->
+        <!--<mvc:message-converters register-defaults="false">-->
+            <!--<bean class="org.springframework.http.converter.StringHttpMessageConverter">-->
+                <!--<constructor-arg value="UTF-8" />-->
+            <!--</bean>-->
+        <!--</mvc:message-converters>-->
     </mvc:annotation-driven>
     <!-- 引用dubbo 服务 -->
     <dubbo:application name="demo-web" />

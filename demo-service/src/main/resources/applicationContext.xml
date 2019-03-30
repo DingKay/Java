@@ -9,6 +9,6 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
     <dubbo:application name="demo-service"/>
-    <dubbo:registry address="zookeeper://101.132.76.246:2181"/>
+    <dubbo:registry address="zookeeper://xiaoba.online:2181"/>
     <dubbo:annotation package="com.dk.service.impl" />
 </beans>
