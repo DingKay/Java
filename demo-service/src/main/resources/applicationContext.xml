@@ -10,6 +10,6 @@
 
     <context:property-placeholder location="classpath:zookeeper.properties"/>
     <dubbo:application name="demo-service"/>
-    <dubbo:registry address="zookeeper://xiaoba.online:2181"/>
+    <dubbo:registry address="${zookeeper.server}"/>
     <dubbo:annotation package="com.dk.service.impl" />
 </beans>
