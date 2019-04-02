@@ -19,5 +19,5 @@
     <!-- 引用dubbo 服务 -->
     <dubbo:application name="demo-web" />
     <dubbo:registry address="zookeeper://101.132.76.246:2181"/>
-    <dubbo:annotation package="com.dk.controller" />
+    <dubbo:annotation package="com.dk.controller.UserAction" />
 </beans>

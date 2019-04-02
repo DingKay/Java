@@ -10,5 +10,6 @@
 
     <dubbo:application name="demo-service"/>
     <dubbo:registry address="zookeeper://101.132.76.246:2181"/>
-    <dubbo:annotation package="com.dk.service.impl" />
+    <!--<dubbo:annotation package="com.dk.service.impl" />-->
+    <dubbo:annotation id="refa" package="com.dk.service.impl.UserServiceImpl"/>
 </beans>

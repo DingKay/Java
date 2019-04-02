@@ -49,6 +49,18 @@
             <artifactId>spring-context-support</artifactId>
             <version>${spring.version}</version>
         </dependency>
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>7.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <scope>provided</scope>
+        </dependency>
         <!-- dubbo相关 -->
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -69,6 +81,7 @@
             <groupId>javassist</groupId>
             <artifactId>javassist</artifactId>
             <version>3.11.0.GA</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
     <build>
