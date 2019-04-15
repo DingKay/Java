@@ -48,6 +48,9 @@ public class ComparisonOperator {
          * if this example equals 'null',then will throws NullPointerException
          */
         Integer example = null;
+        /**
+         * the following is wrong example
+         */
         System.out.println(example.equals(1));
         System.out.println("1".equals(example));
     }
