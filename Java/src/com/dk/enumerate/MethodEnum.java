@@ -10,16 +10,22 @@ package com.dk.enumerate;
  * @create 2019/1/4
  */
 public enum MethodEnum {
-    //Enumerate Constant
+    /**
+     * Enumerate Constant
+     */
     RED("red",1),
     GREEN("green",2),
     BLUE("blue",3);
 
-    //Attribute
+    /**
+     * Attribute
+     */
     private String name;
     private int index;
 
-    //Get/Set
+    /**
+     * Get/Set
+     */
     public String getName() {
         return name;
     }
@@ -28,17 +34,22 @@ public enum MethodEnum {
         return index;
     }
 
-    //Constructor
+    /**
+     * Constructor
+     */
     MethodEnum(String name,int index){
         this.name = name;
         this.index = index;
     }
 
-    //Normal Method
+    /**
+     * Normal Method
+     */
     public static String getName(int index){
         for (MethodEnum methodEnum : MethodEnum.values()){
-            if (index == methodEnum.getIndex())
+            if (index == methodEnum.getIndex()) {
                 return methodEnum.name;
+            }
         }
         return null;
     }

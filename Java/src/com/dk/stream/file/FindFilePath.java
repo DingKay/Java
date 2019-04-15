@@ -64,10 +64,7 @@ public class FindFilePath {
         System.out.println("Please enter the app you wish to open:");
         Scanner scanner = new Scanner(System.in);
         search = scanner.next();
-//        String path = "C:\\";
         FindFilePath findFilePath = new FindFilePath();
-//        String string = findFilePath.getFile(path);
-//        System.out.println("string = " + string);
         File[] roots = File.listRoots();
         for (int i =0; i < roots.length; i++) {
             System.out.println(roots[i].toString().split(":")[0] + "盘");

@@ -29,7 +29,9 @@ public class ImpInterfaceEnum {
             return name;
         }
 
-        //Interface Methods
+        /**
+         * Interface Methods
+         */
         @Override
         public void print() {
             System.out.println(this.getIndex() +":"+ this.getName());

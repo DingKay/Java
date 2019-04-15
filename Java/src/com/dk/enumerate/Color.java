@@ -12,12 +12,13 @@ import com.dk.utils.DK;
  *              Now U Can Use Enumerate Class To Definition Constant
  * @create 2018/12/24
  */
-//Enumerate Class
 public enum Color {
     GREEN,BLUE,RED,YELLOW
 }
 
-/*To Test Enumerate Class*/
+/**
+ * To Test Enumerate Class
+ */
 class Test{
     public static void main(String[] args) {
         //1.Enumerate Constant
