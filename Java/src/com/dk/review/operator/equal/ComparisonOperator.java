@@ -1,14 +1,37 @@
 package com.dk.review.operator.equal;
 
+/**
+ * @author DingKai
+ * @Classname ComparisonOperator
+ * @Description TODO
+ * @create 2019/1/23
+ */
 public class ComparisonOperator {
     public static void main(String[] args) {
         int a = 10;
         int b = 10;
-        //
-        System.out.println(a == b);//true
+        /**
+         * true
+         */
+        System.out.println(a == b);
 
         Thread t1 = new Thread();
         Thread t2 = new Thread();
-        System.out.println(t1 == t2);//false
+        /**
+         * false
+         */
+        System.out.println(t1 == t2);
+
+        /**
+         * this '==' in Integer between -128 to 127 then true
+         * if not this interval then false
+         */
+        Integer common = 127;
+        Integer commoz = 127;
+        System.out.println(common == commoz);
+
+        Integer special = 128;
+        Integer speciaz = 128;
+        System.out.println(special == speciaz);
     }
 }

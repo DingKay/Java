@@ -1,5 +1,11 @@
 package com.dk.review.operator.cycle;
 
+/**
+ * @author DingKai
+ * @Classname ToUseLabel
+ * @Description TODO
+ * @create 2019/1/23
+ */
 public class ToUseLabel {
     public static void main(String[] args) {
         System.out.println("Label");
