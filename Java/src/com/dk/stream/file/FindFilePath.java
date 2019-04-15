@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class FindFilePath {
     private static String search = null;
     private boolean flag;
-    private static String findPath= "C:\\Users\\dk\\Desktop\\findPath.txt";
+    private static String findPath = "C:\\Users\\dk\\Desktop\\findPath.txt";
 
     public boolean isFlag() {
         return flag;
@@ -45,7 +45,7 @@ public class FindFilePath {
         }else {
 //            if (path.toLowerCase().contains(search+".exe")) {
             String[] split = path.toLowerCase().split("\\\\");
-            if (split[split.length-1].equals(search+".exe")) {
+            if (split[split.length-1].equals(search + ".exe")) {
                 System.out.println("Find it");
                 System.out.println(path);
                 ProcessBuilder processBuilder = new ProcessBuilder(path);
