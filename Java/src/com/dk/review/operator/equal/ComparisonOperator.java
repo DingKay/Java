@@ -47,7 +47,11 @@ public class ComparisonOperator {
         /*
          * the following is wrong example
          */
-        System.out.println(example.equals(1));
+        try {
+            System.out.println(example.equals(1));
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+        }
         System.out.println("1".equals(example));
     }
 }
