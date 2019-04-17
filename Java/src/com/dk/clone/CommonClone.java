@@ -6,7 +6,7 @@ package com.dk.clone;
  * @Description review: Java shallow clone
  * @create 2019/4/17
  */
-public class CommonClone implements Cloneable{
+public class CommonClone implements Cloneable {
 
     private String name = "clone";
 
@@ -15,6 +15,30 @@ public class CommonClone implements Cloneable{
     public Long cardId = 1234567890L;
 
     public CloneObj cloneObj;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public Long getCardId() {
+        return cardId;
+    }
+
+    public void setCardId(Long cardId) {
+        this.cardId = cardId;
+    }
 
     public CommonClone(CloneObj cloneObj) {
         this.cloneObj = cloneObj;
