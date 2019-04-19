@@ -15,6 +15,8 @@ public class VariableParameterType {
 
     /**
      * Variable Parameter
+     * void getSomethings(String... somethings)
+     * U can
      */
      private Integer getUserIds(String type, int... ids){
         System.out.println("VariableParameterType.getUserIds");
