@@ -1,4 +1,4 @@
-package com.dk.reflect.getInnerClazz;
+package com.dk.reflect.getinnerclazz;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -8,10 +8,10 @@ import java.lang.reflect.Modifier;
 /**
  * @author DingKai
  * @Classname AccessInnerClassUseReflect
- * @Description TODO
+ * @Description rawtypes Passing parameters with generics when passing parameters
  * @create 2019/1/23
  */
-/*rawtypes Passing parameters with generics when passing parameters*/
+
 @SuppressWarnings({"unchecked","rawtypes"})
 public class AccessInnerClassUseReflect {
     public static void main(String[] args) throws IllegalAccessException, InstantiationException, NoSuchFieldException, NoSuchMethodException, InvocationTargetException {

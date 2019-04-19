@@ -1,4 +1,4 @@
-package com.dk.reflect.getInnerClazz;
+package com.dk.reflect.getinnerclazz;
 
 /**
  * @author DingKai
