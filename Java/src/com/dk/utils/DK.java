@@ -8,14 +8,18 @@ package com.dk.utils;
  * @create 2019/2/11
  */
 public class DK {
-    /*Quickly to print "=" for create a new line*/
+    /**
+     * Quickly to print "=" for create a new line
+     */
     public static void printEqualSign(){
         System.out.println("==============================");
     }
 
-    /*Customize:Quickly to print anything , distinguish different situation of print*/
-    public static void print(String detal){
-        System.out.println("\n" + detal + "\n");
+    /**
+     * Customize:Quickly to print anything , distinguish different situation of print
+     */
+    public static void print(String detail){
+        System.out.println("\n" + detail + "\n");
     }
 
     public static void print(boolean b) {

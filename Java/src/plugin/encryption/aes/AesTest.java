@@ -8,7 +8,7 @@ import java.security.Key;
 /**
  * @author DingKai
  * @Classname AesTest
- * @Description TODO
+ * @Description to encrypt or decrypt String with java 'Cipher'
  * @create 2019/4/22
  */
 public class AesTest {
