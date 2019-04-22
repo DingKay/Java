@@ -1,4 +1,4 @@
-package plugin.entryption.aes;
+package plugin.encryption.aes;
 
 import javax.crypto.Cipher;
 import javax.crypto.NoSuchPaddingException;
