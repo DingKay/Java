@@ -10,12 +10,12 @@ import java.security.NoSuchAlgorithmException;
  * @Description TODO
  * @create 2019/3/15
  */
-public class AESUtils {
-    private AESUtils instance = new AESUtils();
+public class AesUtils {
+    private AesUtils instance = new AesUtils();
 
-    private AESUtils(){}
+    private AesUtils(){}
 
-    public AESUtils getInstance(){
+    public AesUtils getInstance(){
         return instance;
     }
 
