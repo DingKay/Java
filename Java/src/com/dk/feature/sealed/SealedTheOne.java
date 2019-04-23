@@ -1,4 +1,4 @@
-package com.dk.sealed;
+package com.dk.feature.sealed;
 
 /**
  * @author DingKai

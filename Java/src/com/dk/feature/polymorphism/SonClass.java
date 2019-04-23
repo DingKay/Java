@@ -1,4 +1,4 @@
-package com.dk.polymorphism;
+package com.dk.feature.polymorphism;
 
 /**
  * @author DingKai

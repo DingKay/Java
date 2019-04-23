@@ -1,4 +1,4 @@
-package com.dk.sealed.reflect;
+package com.dk.feature.sealed.reflect;
 
 /**
  * @author DingKai

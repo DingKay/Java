@@ -1,4 +1,4 @@
-package com.dk.inherit;
+package com.dk.feature.inherit;
 
 /**
  * @author DingKai

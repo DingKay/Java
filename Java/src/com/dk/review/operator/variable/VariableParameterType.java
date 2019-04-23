@@ -1,4 +1,4 @@
-package com.dk.variable;
+package com.dk.review.operator.variable;
 
 /**
  * @author DingKai
