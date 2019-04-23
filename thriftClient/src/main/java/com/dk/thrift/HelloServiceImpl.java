@@ -1,6 +1,5 @@
 package com.dk.thrift;
 
-import com.dk.thriftclient.Hello;
 import org.apache.thrift.TException;
 
 /**

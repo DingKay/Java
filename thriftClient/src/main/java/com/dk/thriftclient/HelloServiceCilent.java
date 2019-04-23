@@ -1,5 +1,6 @@
 package com.dk.thriftclient;
 
+import com.dk.thrift.Hello;
 import org.apache.thrift.TException;
 import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.protocol.TProtocol;
@@ -21,7 +22,8 @@ public class HelloServiceCilent {
         TTransport tp =null;
 
         try {
-            tp = new TSocket("localhost",9898,30000); //url port timeout
+            //url port timeout
+            tp = new TSocket("localhost",9898,30000);
 
             //协议要和服务端一致
             TProtocol protocol = new TBinaryProtocol(tp);
