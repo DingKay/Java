@@ -22,10 +22,10 @@ public class HelloServiceCilent {
         TTransport tp =null;
 
         try {
-            //url port timeout
+            // url port timeout
             tp = new TSocket("localhost",9898,30000);
 
-            //协议要和服务端一致
+            // 协议要和服务端一致
             TProtocol protocol = new TBinaryProtocol(tp);
             Hello.Client client = new Hello.Client(protocol);
             tp.open();
