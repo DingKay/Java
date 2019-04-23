@@ -12,6 +12,7 @@ public class BlockTest {
     static {
         DK.print("BlockTest's static block");
     }
+
     public BlockTest() {
         DK.print("BlockTest's Constructor");
     }
