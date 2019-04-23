@@ -1,5 +1,6 @@
-package com.dk.thrift;
+package thrift;
 
+import com.dk.thrift.Hello;
 import org.apache.thrift.TProcessor;
 import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.server.TServer;
