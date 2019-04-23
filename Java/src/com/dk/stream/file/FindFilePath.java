@@ -1,5 +1,7 @@
 package com.dk.stream.file;
 
+import org.jetbrains.annotations.Nullable;
+
 import java.io.*;
 import java.util.Scanner;
 
@@ -24,6 +26,7 @@ public class FindFilePath {
         this.flag = flag;
     }
 
+    @Nullable
     private String getFile(String path) throws IOException {
         File file = new File(path);
         File[] files = file.listFiles();
@@ -35,6 +38,14 @@ public class FindFilePath {
         return null;
     }
 
+    /**
+     * recursive method to find file
+     * @author DingKai
+     * @date 2019/4/23
+     * @param path
+     * @return void
+     * @exception IOException
+     */
     private void inPath(String path) throws IOException {
         File file = new File(path);
         File[] files = file.listFiles();
