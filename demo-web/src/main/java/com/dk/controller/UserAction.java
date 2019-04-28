@@ -18,7 +18,6 @@ public class UserAction {
     private static final Logger LOG = LoggerFactory.getLogger(UserAction.class.getName());
 
     /**
-     * @Description
      * Remotely injection ,this annotation equals @AutoWired
      * */
     @Reference
