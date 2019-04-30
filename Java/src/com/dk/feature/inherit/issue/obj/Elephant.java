@@ -12,6 +12,9 @@ public class Elephant extends Animal {
     private int weight;
     private int lifeSpan;
     private String animal;
+    /**
+     * This attribute is for the following comparison 'equals' method, is coding standard
+     */
     private String leg = "legNum";
     private String food = "foodKind";
 
@@ -20,9 +23,10 @@ public class Elephant extends Animal {
     }
 
     public void elephantSet(int legNum,String foodKind,int weight,int lifeSpan) {
+        // common change value
         this.weight = weight;
         this.lifeSpan = lifeSpan;
-
+        // use reflect to change value
         Class<?> clazz = this.getClass().getSuperclass();
         Field[] declaredFields = clazz.getDeclaredFields();
         try {
