@@ -1,5 +1,7 @@
 package com.dk.feature.inherit;
 
+import com.dk.utils.DK;
+
 import java.lang.reflect.Field;
 
 /**
@@ -13,11 +15,36 @@ public class TestToInherit {
         Field[] declaredFields = clazz.getDeclaredFields();
         for (Field declaredField : declaredFields) {
             declaredField.setAccessible(true);
-            Object o = declaredField.get(Base.class.newInstance());
+            Object o = declaredField.get(clazz.newInstance());
             System.out.println(o);
         }
 
         Field money = clazz.getDeclaredField("money");
         System.out.println(money.toString());
+
+        DK.print("below subclass");
+
+        // this reflect api is direct to access base class
+        Class clazzSon = Son.class.getSuperclass();
+        // now to find subclass attribute
+        try {
+            // first use base class clazz object to find declared fields
+            Field[] fields = clazzSon.getDeclaredFields();
+            for (Field field : fields) {
+                field.setAccessible(true);
+                // use subclass object access base class declared fields
+                Object o = field.get(Son.class.newInstance());
+                System.out.println(o);
+            }
+        } catch (Exception e) {
+            System.out.println("NoSuchFieldException : Subclass is not found this attribute");
+        }
+
+        // newInstance an Object to direct use attribute
+        Base base = (Base) clazz.newInstance();
+        Son son = Son.class.newInstance();
+        // if subclass presence same name with base class attribute then see below
+        int age = ((Base)son).age;
+        System.out.println("Son's age:" + son.age + " Base's age:" + base.age + " special age:" + age);
     }
 }

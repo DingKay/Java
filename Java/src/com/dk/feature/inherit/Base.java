@@ -24,6 +24,11 @@ public class Base {
     public String name = "Kay";
 
     /**
+     * same attribute name
+     */
+    public int age = 20;
+
+    /**
      * subclass inherit this simple method
      * @author DingKai
      * @date 2019/4/19

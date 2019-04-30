@@ -5,5 +5,8 @@ package com.dk.feature.inherit;
  * @date 2018/11/19
  */
 public class Son extends Base{
-
+    /**
+     * same attribute name
+     */
+    public int age = 10;
 }
