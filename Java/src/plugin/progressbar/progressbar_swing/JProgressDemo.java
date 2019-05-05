@@ -34,7 +34,7 @@ public class JProgressDemo extends JFrame {
         /*Set the content panel border*/
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
-        /*Application internal panel*/
+        /*Application internal_class panel*/
         setContentPane(contentPane);
 
         /*Set up streaming layout*/
