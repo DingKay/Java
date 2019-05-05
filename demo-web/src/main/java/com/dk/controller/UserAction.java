@@ -26,7 +26,7 @@ public class UserAction {
     @RequestMapping("/get")
     @ResponseBody
     public String getName(){
-        System.out.println("UserAction.getName");
+        LOG.info("UserAction.getName");
         String name = userService.getName();
         return name;
     }
