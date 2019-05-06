@@ -25,7 +25,7 @@ public class StringApi {
     /**
      * contain ' ' string
      */
-    private static String space = " q we r ";
+    private static String space = " q we r \n dk \n";
     
     public static void main(String[] args) {
         // 1.equals: method for comparing two variables for equality, this is better then '==' operate
@@ -40,7 +40,9 @@ public class StringApi {
             System.out.println(e.toString());
         }
 
-        // 2.trim:
-
+        // 2.trim: Remove the 'space' character on both sides of the string and the character whose ASCII code is less
+        // than 'space' (char='' ASCII decimal bit 32), at this example string include special character '\n'
+        String trim = space.trim();
+        System.out.println("original 'space' string:" + space + ";\nnow 'space' string:" + trim + ";");
     }
 }
