@@ -8,6 +8,7 @@ package com.dk.api.lang;
  */
 public class StringApi {
     /**
+     * equals
      * testString 'abcdefg'
      */
     private static String text = "abcdefg";
@@ -23,9 +24,33 @@ public class StringApi {
     private static String none = null;
 
     /**
+     * trim
      * contain ' ' string
      */
     private static String space = " q we r \n dk \n";
+
+    /**
+     * compareTo
+     * simple single string a,b,g
+     * ASCII a = 97
+     *       b = 98
+     *       g = 103
+     */
+    private static String a = "a";
+
+    private static String b = "b";
+
+    private static String g = "g";
+
+    /**
+     * complex combination string abc
+     */
+    private static String abc = "abc";
+
+    /**
+     * complex combination string abd
+     */
+    private static String abd = "abd";
     
     public static void main(String[] args) {
         // 1.equals: method for comparing two variables for equality, this is better then '==' operate
@@ -44,5 +69,16 @@ public class StringApi {
         // than 'space' (char='' ASCII decimal bit 32), at this example string include special character '\n'
         String trim = space.trim();
         System.out.println("original 'space' string:" + space + ";\nnow 'space' string:" + trim + ";");
+
+        // 3.compareTo: the a compare to b, compare with ascii code
+        // return value is the ascii code operation result, can be positive and negative or zero
+        int negative = a.compareTo(b);
+        int positive = g.compareTo(a);
+        int zero = a.compareTo(a);
+        System.out.println("a compare to b = " + negative + ", g compare to a = " + positive + ", a compare to a = " + zero);
+
+        // 4.
+        int hashCode = text.hashCode();
+        System.out.println(hashCode);
     }
 }
