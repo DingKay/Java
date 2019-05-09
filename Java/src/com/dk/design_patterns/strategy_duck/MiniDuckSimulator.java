@@ -2,7 +2,7 @@ package com.dk.design_patterns.strategy_duck;
 
 import com.dk.design_patterns.strategy_duck.interf_imp.FlyNoWay;
 import com.dk.design_patterns.strategy_duck.interf_imp.MuteQuack;
-import com.dk.utils.DK;
+import com.dk.util.DK;
 
 /**
  * @author DingKai

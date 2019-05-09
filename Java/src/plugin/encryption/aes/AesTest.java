@@ -1,6 +1,6 @@
 package plugin.encryption.aes;
 
-import com.dk.utils.DK;
+import com.dk.util.DK;
 
 import javax.crypto.Cipher;
 import java.security.Key;

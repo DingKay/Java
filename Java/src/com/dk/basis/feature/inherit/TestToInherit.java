@@ -1,6 +1,6 @@
 package com.dk.basis.feature.inherit;
 
-import com.dk.utils.DK;
+import com.dk.util.DK;
 
 import java.lang.reflect.Field;
 

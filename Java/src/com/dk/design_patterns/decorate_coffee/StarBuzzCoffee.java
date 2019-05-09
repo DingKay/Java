@@ -4,7 +4,7 @@ import com.dk.design_patterns.decorate_coffee.abst.Beverage;
 import com.dk.design_patterns.decorate_coffee.decorate.Mocha;
 import com.dk.design_patterns.decorate_coffee.decorate.Soy;
 import com.dk.design_patterns.decorate_coffee.decorate.Whip;
-import com.dk.utils.DK;
+import com.dk.util.DK;
 
 /**
  * @author DingKai

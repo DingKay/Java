@@ -1,6 +1,6 @@
 package com.dk.basis.operator.bitoperation;
 
-import com.dk.utils.DK;
+import com.dk.util.DK;
 
 /**
  * @author DingKai

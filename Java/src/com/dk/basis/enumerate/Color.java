@@ -1,6 +1,6 @@
 package com.dk.basis.enumerate;
 
-import com.dk.utils.DK;
+import com.dk.util.DK;
 
 /**
  * @author DingKai

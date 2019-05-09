@@ -1,6 +1,6 @@
 package com.dk.api.lang;
 
-import com.dk.utils.DK;
+import com.dk.util.DK;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

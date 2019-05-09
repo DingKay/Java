@@ -1,6 +1,6 @@
 package com.dk.basis.exception.test;
 
-import com.dk.utils.DK;
+import com.dk.util.DK;
 import com.dk.basis.exception.customize.SimpleException;
 import org.jetbrains.annotations.Contract;
 

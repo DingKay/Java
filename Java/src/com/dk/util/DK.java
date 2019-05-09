@@ -1,10 +1,10 @@
-package com.dk.utils;
+package com.dk.util;
 
 /**
  * @author DingKai
  * @Classname DK
  * @Description Faster use and faster work ,In this repository ,so many class or other display console output.
- *              so create this utils class for distinguish different situation of console output
+ *              so create this util class for distinguish different situation of console output
  * @create 2019/2/11
  */
 public class DK {

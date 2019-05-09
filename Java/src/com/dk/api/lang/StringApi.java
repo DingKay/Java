@@ -16,7 +16,12 @@ public class StringApi {
     /**
      * testString '123456'
      */
-    private static String digital = "123456";
+    private static String digitalString = "123456";
+
+    /**
+     * test int 123456
+     */
+    private static int digital = 123456;
 
     /**
      * example 'null' object
@@ -54,7 +59,7 @@ public class StringApi {
     
     public static void main(String[] args) {
         // 1.equals: method for comparing two variables for equality, this is better then '==' operate
-        boolean equals = text.equals(digital);
+        boolean equals = text.equals(digitalString);
         /*
         tips: if fist variable is null ,will throw NullPointerException, so we need set a known and definite
         variable at fist to comparing. see follow example:
@@ -64,6 +69,9 @@ public class StringApi {
         } catch (NullPointerException e) {
             System.out.println(e.toString());
         }
+        // different type of variable
+        boolean equalsDigital = digitalString.equals(digital);
+        System.out.println("String \"123456\" comparing int 123456 :" + equalsDigital);
 
         // 2.trim: Remove the 'space' character on both sides of the string and the character whose ASCII code is less
         // than 'space' (char='' ASCII decimal bit 32), at this example string include special character '\n'
@@ -77,7 +85,7 @@ public class StringApi {
         int zero = a.compareTo(a);
         System.out.println("a compare to b = " + negative + ", g compare to a = " + positive + ", a compare to a = " + zero);
 
-        // 4.
+        // 4.hashCode:
         int hashCode = text.hashCode();
         System.out.println(hashCode);
     }
