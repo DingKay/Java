@@ -88,5 +88,14 @@ public class StringApi {
         // 4.hashCode:
         int hashCode = text.hashCode();
         System.out.println(hashCode);
+        System.out.println(new StringApi().reverseString(text));
     }
+
+    public String reverseString(String str) {
+        if ((null == str) || str.length() < 2) {
+            return str;
+        }
+        return reverseString(str.substring(1)) +str.charAt(0);
+    }
+
 }
