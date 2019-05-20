@@ -1,4 +1,4 @@
-package plugin.progressbar.progressbar_code;
+package plugin.progressbar.progressbar;
 
 /**
  * @author DingKai
@@ -12,6 +12,10 @@ public class CodeProgressBar {
     private int endIndex = 50;
     private String head = "\033[36;4m";
     private String end = "\033[0m";
+    /**
+     * fixed value added
+     */
+    private static double fixedValue = 2.5D;
 
     public CodeProgressBar(double barLength){
         this.barLength = barLength;
@@ -35,8 +39,9 @@ public class CodeProgressBar {
         int nowIndex = (int) Math.round(this.endIndex * percentage);
         StringBuilder sb = new StringBuilder("[");
         for (int i = 0; i < this.endIndex; i++) {
-            if (i == 0 && nowIndex != 0)
+            if (i == 0 && nowIndex != 0) {
                 sb.append(head);
+            }
             if (i < nowIndex){
                 sb.append("=");
             } else if(i == nowIndex){
@@ -45,8 +50,9 @@ public class CodeProgressBar {
                 sb.append(" ");
             }
         }
-        if (nowIndex == this.endIndex)
+        if (nowIndex == this.endIndex) {
             sb.append(end);
+        }
         sb.append("]  ").append(String.format("%.2f", percentage * 100)).append("%");
 
         return String.valueOf(sb);
@@ -54,7 +60,7 @@ public class CodeProgressBar {
 
     public static void main(String[] args) {
         CodeProgressBar codeProgressBar = new CodeProgressBar(100);
-        for (double i = 0; i <= codeProgressBar.getBarLength(); i+=2.5D) {
+        for (double i = 0; i <= codeProgressBar.getBarLength(); i += fixedValue) {
             codeProgressBar.showBarByPoint(i);
             try {
                 Thread.sleep(1000);

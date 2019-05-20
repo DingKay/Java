@@ -1,4 +1,4 @@
-package plugin.progressbar.progressbar_swing;
+package plugin.progressbar.progressbar;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;

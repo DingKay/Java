@@ -1,5 +1,7 @@
 package com.dk.api.lang;
 
+import com.dk.util.DK;
+
 /**
  * @author DingKai
  * @Classname StringApi
@@ -56,6 +58,11 @@ public class StringApi {
      * complex combination string abd
      */
     private static String abd = "abd";
+
+    /**
+     * int's limit length
+     */
+    private static int maxLength = 1234567890;
     
     public static void main(String[] args) {
         // 1.equals: method for comparing two variables for equality, this is better then '==' operate
@@ -69,7 +76,7 @@ public class StringApi {
         } catch (NullPointerException e) {
             System.out.println(e.toString());
         }
-        // different type of variable
+        // different type of variable, class String's equals method can't use on different Object
         boolean equalsDigital = digitalString.equals(digital);
         System.out.println("String \"123456\" comparing int 123456 :" + equalsDigital);
 
@@ -85,17 +92,34 @@ public class StringApi {
         int zero = a.compareTo(a);
         System.out.println("a compare to b = " + negative + ", g compare to a = " + positive + ", a compare to a = " + zero);
 
-        // 4.hashCode:
+        // 4.hashCode: every char ascii code to multiply *31
+        // todo *why multiply 31 ?
+        /* int the max length be eleven bit of sign number digital and 1 * 2^31 equals 1 * 2^32 - 1*/
         int hashCode = text.hashCode();
-        System.out.println(hashCode);
-        System.out.println(new StringApi().reverseString(text));
+        System.out.println("test hashCode = " + hashCode + " and length = " + String.valueOf(hashCode).length() +
+                ", digital 0 hashCode = " + "0".hashCode() + " and length = " + String.valueOf("0".hashCode()).length());
+        // compressed hash value, The space of the hash value is usually much smaller than the input space.
+        int maxLengthHashCode = String.valueOf(maxLength).hashCode();
+        System.out.println("maxLengthHashCode = " + maxLengthHashCode + " maxLengthHashCode length = " +
+                String.valueOf(maxLengthHashCode).length());
+        // hash collision: String "gdejicbegh" hascCode equals "hgebcijedg" and Both of them are special flip strings
+        DK.printWithColor("hash collision", DK.PrintColor.CYAN, true);
+        System.out.println("gdejicbegh hashCode:" + "gdejicbegh".hashCode() + " hgebcijedg hashCode:" +
+                "hgebcijedg".hashCode());
     }
 
-    public String reverseString(String str) {
+    /**
+     * reversal the String use recursive call
+     * @author DingKai
+     * @date 2019/5/20
+     * @param str
+     * @return java.lang.String
+     */
+    public static String reverseString(String str) {
         if ((null == str) || str.length() < 2) {
             return str;
         }
-        return reverseString(str.substring(1)) +str.charAt(0);
+        return reverseString(str.substring(1)) + str.charAt(0);
     }
 
 }
