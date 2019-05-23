@@ -63,6 +63,11 @@ public class StringApi {
      * int's limit length
      */
     private static int maxLength = 1234567890;
+
+    /**
+     * Static int value
+     */
+    private static final int TWO = 2;
     
     public static void main(String[] args) {
         // 1.equals: method for comparing two variables for equality, this is better then '==' operate
@@ -116,7 +121,7 @@ public class StringApi {
      * @return java.lang.String
      */
     public static String reverseString(String str) {
-        if ((null == str) || str.length() < 2) {
+        if ((null == str) || str.length() < TWO) {
             return str;
         }
         return reverseString(str.substring(1)) + str.charAt(0);
