@@ -16,7 +16,7 @@ public class CloneTest {
         Out.print(common.toString());
         Out.print(clone.toString());
 
-        Out.printEqualSign();
+        Out.printEqualSign(30);
         // modify common
         common.setName("newclonename");
         common.setAge(18);

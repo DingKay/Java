@@ -16,7 +16,7 @@ public class MiniDuckSimulator {
         mallard.performFly();
         mallard.performQuack();
 
-        Out.printEqualSign();
+        Out.printEqualSign(30);
 
         Out.print("<< Default >>");
         Duck model = new ModelDuck();

@@ -85,7 +85,7 @@ public class StringApi {
         boolean equalsDigital = digitalString.equals(digital);
         System.out.println("String \"123456\" comparing int 123456 :" + equalsDigital);
 
-        Out.printEqualSign();
+        Out.printEqualSign(40);
 
         // 2.trim: Remove the 'space' character on both sides of the string and the character whose ASCII code is less
         // than 'space' (char='' ASCII decimal bit 32), at this example string include special character '\n'

@@ -17,7 +17,7 @@ public class StarBuzzCoffee {
         Beverage beverage = new Espresso();
         Out.print(beverage.getDescription() + " $" + beverage.cost());
 
-        Out.printEqualSign();
+        Out.printEqualSign(30);
 
         Beverage beverage2 = new HouseBlend();
         beverage2 = new Mocha(beverage2);
@@ -26,7 +26,7 @@ public class StarBuzzCoffee {
 
         Out.print(beverage2.getDescription() + " $" + beverage2.cost());
 
-        Out.printEqualSign();
+        Out.printEqualSign(30);
 
         /*BlackCoffee : Adding
         * Soy milk, default cup --> $1.15

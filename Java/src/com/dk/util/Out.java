@@ -39,10 +39,30 @@ public class Out {
     }
 
     /**
-     * Quickly to print "=" for create a new line
+     * Quickly to print sign for create a new line
+     * <p>default sign value "#"</p>
      */
-    public static void printEqualSign(){
-        System.out.println("==============================");
+    public static void printEqualSign(int length, String... s){
+        String string, sign;
+        sign = "";
+        for (String s1 : s) {
+            sign += s1;
+        }
+        StringBuilder out = new StringBuilder();
+        if ("".equals(sign) || null == sign){
+            string = "#";
+        } else {
+            if (sign.length() > 1){
+                string = String.valueOf(sign.toCharArray()[0]);
+            } else {
+                string = sign;
+            }
+        }
+        for (int i = 0; i < length; i++) {
+            out.append(string);
+        }
+
+        System.out.println(out);
     }
 
     /**

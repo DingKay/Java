@@ -25,7 +25,7 @@ public class AesTest {
 
         Out.print("encryptString = " + encryptString + "\n[byte==>" + s + "]");
 
-        Out.printEqualSign();
+        Out.printEqualSign(30);
 
         byte[] decryptionString = aesUtils.encrypt(key, s, Cipher.DECRYPT_MODE, encryptString);
         System.out.println(new String(decryptionString));

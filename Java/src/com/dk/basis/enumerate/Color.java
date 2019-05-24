@@ -25,7 +25,7 @@ class Test{
         System.out.println("red ==> " + Color.RED + "\n" + "blue ==> " + Color.BLUE);
         System.out.println("green ==> " + Color.GREEN + "\n" + "yellow ==> " + Color.YELLOW);
 
-        Out.printEqualSign();
+        Out.printEqualSign(30);
 
         Color color = Color.BLUE;
         Out.print(color.toString());
