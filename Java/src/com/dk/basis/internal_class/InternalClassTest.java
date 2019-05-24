@@ -40,6 +40,7 @@ public class InternalClassTest {
     //局部内部类
     public InternalClassTest.Person MethodInternalClass(){
         class Teacher extends InternalClassTest.Person{
+            @Override
             public void print(){
                 System.out.println("i'm InternalClassTest.methodInternalClass print");
             }

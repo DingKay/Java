@@ -1,6 +1,6 @@
 package com.dk.basis.feature.inherit;
 
-import com.dk.util.DK;
+import com.dk.util.Out;
 
 import java.lang.reflect.Field;
 
@@ -22,7 +22,7 @@ public class TestToInherit {
         Field money = clazz.getDeclaredField("money");
         System.out.println(money.toString());
 
-        DK.print("below subclass");
+        Out.print("below subclass");
 
         // this reflect api is direct to access base class
         Class clazzSon = Son.class.getSuperclass();

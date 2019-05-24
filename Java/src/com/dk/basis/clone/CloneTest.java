@@ -1,6 +1,6 @@
 package com.dk.basis.clone;
 
-import com.dk.util.DK;
+import com.dk.util.Out;
 
 /**
  * @author DingKai
@@ -13,10 +13,10 @@ public class CloneTest {
         CommonClone common = new CommonClone(new CloneObj("String Test", 99));
         Object clone = common.clone();
 
-        DK.print(common.toString());
-        DK.print(clone.toString());
+        Out.print(common.toString());
+        Out.print(clone.toString());
 
-        DK.printEqualSign();
+        Out.printEqualSign();
         // modify common
         common.setName("newclonename");
         common.setAge(18);
@@ -25,7 +25,7 @@ public class CloneTest {
         cloneObj.setStringTest("new String Test");
         cloneObj.setAnIntTest(200);
         // Java shallow clone : variable clone will equals variable common object
-        DK.print(common.toString());
-        DK.print(clone.toString());
+        Out.print(common.toString());
+        Out.print(clone.toString());
     }
 }

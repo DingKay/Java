@@ -1,6 +1,6 @@
 package com.dk.api.lang;
 
-import com.dk.util.DK;
+import com.dk.util.Out;
 
 /**
  * @author DingKai
@@ -79,16 +79,19 @@ public class StringApi {
         try {
             equals = none.equals(text);
         } catch (NullPointerException e) {
-            System.out.println(e.toString());
+            Out.printWithColor(e.toString(), Out.PrintColor.RED, true);
         }
         // different type of variable, class String's equals method can't use on different Object
         boolean equalsDigital = digitalString.equals(digital);
         System.out.println("String \"123456\" comparing int 123456 :" + equalsDigital);
 
+        Out.printEqualSign();
+
         // 2.trim: Remove the 'space' character on both sides of the string and the character whose ASCII code is less
         // than 'space' (char='' ASCII decimal bit 32), at this example string include special character '\n'
         String trim = space.trim();
-        System.out.println("original 'space' string:" + space + ";\nnow 'space' string:" + trim + ";");
+        Out.printWithColor("original 'space' string:" + space + ";\nnow 'space' string:" + trim + ";",
+                Out.PrintColor.BLUE, false);
 
         // 3.compareTo: the a compare to b, compare with ascii code
         // return value is the ascii code operation result, can be positive and negative or zero
@@ -99,7 +102,10 @@ public class StringApi {
 
         // 4.hashCode: every char ascii code to multiply *31
         // todo *why multiply 31 ?
-        /* int the max length be eleven bit of sign number digital and 1 * 2^31 equals 1 * 2^32 - 1*/
+        /*
+        int the max length be eleven bit of sign number digital and 1 * 2^31 equals 1 * 2^32 - 1
+        h = 31 * h + val[i]
+        */
         int hashCode = text.hashCode();
         System.out.println("test hashCode = " + hashCode + " and length = " + String.valueOf(hashCode).length() +
                 ", digital 0 hashCode = " + "0".hashCode() + " and length = " + String.valueOf("0".hashCode()).length());
@@ -108,9 +114,13 @@ public class StringApi {
         System.out.println("maxLengthHashCode = " + maxLengthHashCode + " maxLengthHashCode length = " +
                 String.valueOf(maxLengthHashCode).length());
         // hash collision: String "gdejicbegh" hascCode equals "hgebcijedg" and Both of them are special flip strings
-        DK.printWithColor("hash collision", DK.PrintColor.CYAN, true);
+        Out.printWithColor("hash collision", Out.PrintColor.CYAN, true);
         System.out.println("gdejicbegh hashCode:" + "gdejicbegh".hashCode() + " hgebcijedg hashCode:" +
                 "hgebcijedg".hashCode());
+        // override hash code method
+        int code = getHashCode("0123456789");
+        Out.printWithColor("0123456789 hash code==>" + code, Out.PrintColor.CYAN, true);
+
     }
 
     /**
@@ -125,6 +135,28 @@ public class StringApi {
             return str;
         }
         return reverseString(str.substring(1)) + str.charAt(0);
+    }
+
+    /**
+     * use algorithm get hash code
+     * @author DingKai
+     * @date 2019/5/24
+     * @param string
+     * @return int
+     * @throws
+     */
+    public static int getHashCode(String string) {
+        int hash = 0;
+        int h = hash;
+        char[] value = string.toCharArray();
+        if (h == 0 && value.length > 0) {
+            char[] val = value;
+            for (int i = 0; i < value.length; i++) {
+                h = 31 * h + val[i];
+            }
+            hash = h;
+        }
+        return hash;
     }
 
 }

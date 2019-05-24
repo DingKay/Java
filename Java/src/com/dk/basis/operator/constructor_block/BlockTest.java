@@ -1,6 +1,6 @@
 package com.dk.basis.operator.constructor_block;
 
-import com.dk.util.DK;
+import com.dk.util.Out;
 
 /**
  * @author DingKai
@@ -10,10 +10,10 @@ import com.dk.util.DK;
  */
 public class BlockTest {
     static {
-        DK.print("BlockTest's static block");
+        Out.print("BlockTest's static block");
     }
 
     public BlockTest() {
-        DK.print("BlockTest's Constructor");
+        Out.print("BlockTest's Constructor");
     }
 }

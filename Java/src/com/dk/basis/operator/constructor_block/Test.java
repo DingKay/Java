@@ -1,6 +1,6 @@
 package com.dk.basis.operator.constructor_block;
 
-import com.dk.util.DK;
+import com.dk.util.Out;
 
 /**
  * @author DingKai
@@ -11,7 +11,7 @@ import com.dk.util.DK;
 public class Test {
     public static void main(String[] args) {
         new BlockTest();{
-            DK.print("Constructor block");
+            Out.print("Constructor block");
         }
     }
 }

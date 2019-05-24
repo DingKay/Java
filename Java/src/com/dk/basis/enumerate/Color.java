@@ -1,6 +1,6 @@
 package com.dk.basis.enumerate;
 
-import com.dk.util.DK;
+import com.dk.util.Out;
 
 /**
  * @author DingKai
@@ -25,11 +25,11 @@ class Test{
         System.out.println("red ==> " + Color.RED + "\n" + "blue ==> " + Color.BLUE);
         System.out.println("green ==> " + Color.GREEN + "\n" + "yellow ==> " + Color.YELLOW);
 
-        DK.printEqualSign();
+        Out.printEqualSign();
 
         Color color = Color.BLUE;
-        DK.print(color.toString());
+        Out.print(color.toString());
         color = Color.RED;
-        DK.print(color.toString());
+        Out.print(color.toString());
     }
 }

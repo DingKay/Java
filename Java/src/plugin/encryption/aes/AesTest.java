@@ -1,6 +1,6 @@
 package plugin.encryption.aes;
 
-import com.dk.util.DK;
+import com.dk.util.Out;
 
 import javax.crypto.Cipher;
 import java.security.Key;
@@ -23,9 +23,9 @@ public class AesTest {
             s += b;
         }
 
-        DK.print("encryptString = " + encryptString + "\n[byte==>" + s + "]");
+        Out.print("encryptString = " + encryptString + "\n[byte==>" + s + "]");
 
-        DK.printEqualSign();
+        Out.printEqualSign();
 
         byte[] decryptionString = aesUtils.encrypt(key, s, Cipher.DECRYPT_MODE, encryptString);
         System.out.println(new String(decryptionString));

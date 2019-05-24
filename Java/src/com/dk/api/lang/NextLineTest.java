@@ -1,6 +1,6 @@
 package com.dk.api.lang;
 
-import com.dk.util.DK;
+import com.dk.util.Out;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -18,15 +18,15 @@ import java.util.Scanner;
  */
 public class NextLineTest {
     public static void main(String[] args) {
-        int x,y;
+        int x, y;
         Scanner scanner = new Scanner(System.in);
         while (true) {
             try {
                 x = scanner.nextInt();
                 y = scanner.nextInt();
-                DK.print("y = " + (x + y));
+                Out.print("y = " + (x + y));
             } catch (InputMismatchException e) {
-                DK.print("Incorrect input and re-enter two integers:");
+                Out.print("Incorrect input and re-enter two integers:");
                 // solve infinite loop problem
                 scanner.nextLine();
                 continue;

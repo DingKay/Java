@@ -4,7 +4,7 @@ import com.dk.design_patterns.decorate_coffee.abst.Beverage;
 import com.dk.design_patterns.decorate_coffee.decorate.Mocha;
 import com.dk.design_patterns.decorate_coffee.decorate.Soy;
 import com.dk.design_patterns.decorate_coffee.decorate.Whip;
-import com.dk.util.DK;
+import com.dk.util.Out;
 
 /**
  * @author DingKai
@@ -15,18 +15,18 @@ import com.dk.util.DK;
 public class StarBuzzCoffee {
     public static void main(String[] args) {
         Beverage beverage = new Espresso();
-        DK.print(beverage.getDescription() + " $" + beverage.cost());
+        Out.print(beverage.getDescription() + " $" + beverage.cost());
 
-        DK.printEqualSign();
+        Out.printEqualSign();
 
         Beverage beverage2 = new HouseBlend();
         beverage2 = new Mocha(beverage2);
         beverage2 = new Mocha(beverage2);
         beverage2 = new Whip(beverage2);
 
-        DK.print(beverage2.getDescription() + " $" + beverage2.cost());
+        Out.print(beverage2.getDescription() + " $" + beverage2.cost());
 
-        DK.printEqualSign();
+        Out.printEqualSign();
 
         /*BlackCoffee : Adding
         * Soy milk, default cup --> $1.15
@@ -35,14 +35,14 @@ public class StarBuzzCoffee {
         /*Test : beverage3 at below is not the same*/
         Beverage temp = beverage3;
         /*must be true*/
-        DK.print(temp == beverage3);
+        Out.print(temp == beverage3);
         beverage3.setSize(Beverage.Size.VENTI);
         beverage3 = new Soy(beverage3);
         /*not the same object , is 'false'
         * the below same reason*/
-        DK.print(temp == beverage3);
+        Out.print(temp == beverage3);
         beverage3 = new Whip(beverage3);
 
-        DK.print(beverage3.getDescription() + " $" + beverage3.cost());
+        Out.print(beverage3.getDescription() + " $" + beverage3.cost());
     }
 }

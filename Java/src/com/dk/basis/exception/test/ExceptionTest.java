@@ -1,6 +1,6 @@
 package com.dk.basis.exception.test;
 
-import com.dk.util.DK;
+import com.dk.util.Out;
 import com.dk.basis.exception.customize.SimpleException;
 import org.jetbrains.annotations.Contract;
 
@@ -25,11 +25,11 @@ public class ExceptionTest {
 
     public static void main(String[] args) {
         try {
-            DK.print("the following is customize com.dk.basis.exception");
+            Out.print("the following is customize com.dk.basis.exception");
             test.simpleExceptionTest();
         } catch (SimpleException e) {
             e.printStackTrace();
-            DK.print("catch it!");
+            Out.print("catch it!");
         }
     }
 
