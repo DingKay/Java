@@ -8,6 +8,12 @@ package com.dk.util;
  * @create 2019/2/11
  */
 public class Out {
+
+    /**
+     * title's number
+     */
+    private static volatile long no;
+
     public enum PrintColor{
         /**
          * cyan-blue
@@ -74,6 +80,10 @@ public class Out {
 
     public static void print(boolean b) {
         System.out.println("\n" + b + "\n");
+    }
+
+    public static void title(String title) {
+        System.out.println(no++ + ". " + title);
     }
 
     /**

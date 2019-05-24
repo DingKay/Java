@@ -70,6 +70,7 @@ public class StringApi {
     private static final int TWO = 2;
     
     public static void main(String[] args) {
+        Out.title("String.equals");
         // 1.equals: method for comparing two variables for equality, this is better then '==' operate
         boolean equals = text.equals(digitalString);
         /*
@@ -86,13 +87,15 @@ public class StringApi {
         System.out.println("String \"123456\" comparing int 123456 :" + equalsDigital);
 
         Out.printEqualSign(40);
-
+        Out.title("String.trim");
         // 2.trim: Remove the 'space' character on both sides of the string and the character whose ASCII code is less
         // than 'space' (char='' ASCII decimal bit 32), at this example string include special character '\n'
         String trim = space.trim();
         Out.printWithColor("original 'space' string:" + space + ";\nnow 'space' string:" + trim + ";",
                 Out.PrintColor.BLUE, false);
 
+        Out.printEqualSign(40);
+        Out.title("String.compareTo");
         // 3.compareTo: the a compare to b, compare with ascii code
         // return value is the ascii code operation result, can be positive and negative or zero
         int negative = a.compareTo(b);
@@ -100,6 +103,8 @@ public class StringApi {
         int zero = a.compareTo(a);
         System.out.println("a compare to b = " + negative + ", g compare to a = " + positive + ", a compare to a = " + zero);
 
+        Out.printEqualSign(40);
+        Out.title("String.hashCode");
         // 4.hashCode: every char ascii code to multiply *31
         // todo *why multiply 31 ?
         /*
@@ -149,7 +154,7 @@ public class StringApi {
         int hash = 0;
         int h = hash;
         char[] value = string.toCharArray();
-        if (h == 0 && value.length > 0) {
+        if (value.length > 0) {
             char[] val = value;
             for (int i = 0; i < value.length; i++) {
                 h = 31 * h + val[i];
