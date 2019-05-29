@@ -68,6 +68,11 @@ public class StringApi {
      * Static int value
      */
     private static final int TWO = 2;
+
+    /**
+     * for split
+     */
+    private static String forSplit = "a;b;c;d =|= ;e,f,g,h";
     
     public static void main(String[] args) {
         Out.title("String.equals");
@@ -125,6 +130,19 @@ public class StringApi {
         // override hash code method
         int code = getHashCode("0123456789");
         Out.printWithColor("0123456789 hash code==>" + code, Out.PrintColor.CYAN, true);
+        // why use this arithmetic
+        hashCodeArithmetic();
+
+        Out.printEqualSign(40);
+        Out.title("String.split");
+        // 5.split:split a string into multiple strings
+        String[] split = forSplit.split(";");
+
+        split = forSplit.split(";", 3);
+        Out.print("before split:" + forSplit + "\nafter split: split[] length:" + split.length + "\tsplit[0]=" + split[0]
+                + "\tsplit[1]=" + split[1] + "\tsplit[2]=" + split[2] + "\tsplit second parameter is after split[] " +
+                "length");
+
 
     }
 
@@ -162,6 +180,40 @@ public class StringApi {
             hash = h;
         }
         return hash;
+    }
+
+    /**
+     * Java hashCode arithmetic
+     * @author DingKai
+     * @date 2019/5/29
+     * @return void
+     */
+    public static void hashCodeArithmetic() {
+        int hashCode = 0;
+        int [] s = {0, 1, 2, 3, 4};
+
+        hashCode = (s[0] * (31 * 31 * 31 * 31)) + (s[1] * (31 * 31 * 31)) + (s[2] * 31 * 31) + (s[3] * 31) + s[4];
+        Out.print("hashCodeArithmetic original first:" + hashCode);
+
+        int h = 0;
+        for (int i = 0; i < s.length; i++) {
+            h = 31 * h + s[i];
+        }
+        /*
+        jdk:
+        s[0]*31^(n-1) + s[1]*31^(n-2) + ... + s[n-1]
+
+        original:
+        s[0]
+        s[0] * 31 + s[1]
+        (s[0] * 31 + s[1]) * 31 + s[2]
+        ((s[0] * 31 + s[1]) * 31 + s[2]) * 31 + s[3]
+
+        Change:
+        ((s[0] * 31^2 + s[1] * 31) + s[2]) * 31 + s[3]
+        s[0] * 31^3 + s[1] * 31^2 + s[2] * 31 + s[3]
+        */
+        Out.print("hashCodeArithmetic change second:" + h);
     }
 
 }

@@ -12,11 +12,11 @@ public class Out {
     /**
      * title's number
      */
-    private static volatile long no;
+    private static volatile long no = 1;
 
     public enum PrintColor{
         /**
-         * cyan-blue
+         * choice color
          */
         BLACK("\033[30;m", "\033[m"),
         RED("\033[31;m", "\033[m"),
