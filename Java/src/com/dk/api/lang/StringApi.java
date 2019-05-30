@@ -166,7 +166,6 @@ public class StringApi {
      * @date 2019/5/24
      * @param string
      * @return int
-     * @throws
      */
     public static int getHashCode(String string) {
         int hash = 0;
@@ -186,7 +185,6 @@ public class StringApi {
      * Java hashCode arithmetic
      * @author DingKai
      * @date 2019/5/29
-     * @return void
      */
     public static void hashCodeArithmetic() {
         int hashCode = 0;
