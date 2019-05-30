@@ -55,6 +55,9 @@ public class JdbcStatement {
         }
     }
 
+    /**
+     * get JdbcStatement instance
+     */
     public static JdbcStatement getJdbcStatement()
     {
         return jdbcStatement;
@@ -137,7 +140,7 @@ public class JdbcStatement {
     /**
      * show all database
      */
-    public List showDatabases()
+    public List<String> showDatabases()
     {
         List list = new ArrayList();
         ResultSet resultSet = null;
@@ -149,6 +152,31 @@ public class JdbcStatement {
         try {
             while (resultSet.next()) {
                 list.add(resultSet.getString(1));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
+    }
+
+    public List<List> viewStructure(String tableName)
+    {
+        List<List> list = new ArrayList<>();
+        ResultSet resultSet = null;
+        try {
+            resultSet = statement.executeQuery("desc " + tableName);
+            List<String> column = new ArrayList<>();
+            ResultSetMetaData metaData = resultSet.getMetaData();
+            for (int i = 1; i <= metaData.getColumnCount(); i++) {
+                column.add(metaData.getColumnName(i));
+            }
+            list.add(column);
+            while (resultSet.next()) {
+                List<String> l = new ArrayList<>();
+                for (int i = 1; i <= metaData.getColumnCount(); i++) {
+                    l.add(resultSet.getString(i));
+                }
+                list.add(l);
             }
         } catch (SQLException e) {
             e.printStackTrace();
