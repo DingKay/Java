@@ -108,6 +108,8 @@ public class StringApi {
         int zero = a.compareTo(a);
         System.out.println("a compare to b = " + negative + ", g compare to a = " + positive + ", a compare to a = " + zero);
 
+        Out.print("abc compare adb = " + abc.compareTo(abd));
+
         Out.printEqualSign(40);
         Out.title("String.hashCode");
         // 4.hashCode: every char ascii code to multiply *31

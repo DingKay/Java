@@ -10,9 +10,6 @@ import java.util.Map;
  * 商品表
  * @author DingKai
  * @date 2019/4/11
- * @param null
- * @return
- * @exception
  */
 public class TbItem implements Serializable{
 	
