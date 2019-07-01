@@ -16,7 +16,7 @@ public class JdbcStatement {
     /**
      * properties file path
      * C:\Users\dk\Documents\Project\Java\out\production\Java\com\dk\basis\dao
-     * C:\Users\dk\Documents\Project\Java\out\production\Java\jdbcStatement
+     * C:\Users\dk\Documents\Project\Java\out\production\Java\jdbc\
      */
     private final String FILE_PATH = "../../../../jdbc/database.properties";
 
