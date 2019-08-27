@@ -1,6 +1,8 @@
 package com.dk.spring;
 
+import com.dk.init.TestConfiguration;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -16,5 +18,7 @@ public class MainApp {
         Message message = (Message)context.getBean("message");
         message.setMessage("I'm Java Developer!");
         helloworld.printMessage();
+
+        AnnotationConfigApplicationContext annotationContext = new AnnotationConfigApplicationContext(TestConfiguration.class);
     }
 }
