@@ -22,7 +22,7 @@ public class HelloServiceServer {
             System.out.println("Thrift服务端启动...");
             TProcessor tp = new Hello.Processor<Hello.Iface>(new HelloServiceImpl());
 
-            //serversocket 端口号为9898  单线程模型
+            //server socket 端口号为9898  单线程模型
             TServerSocket serverTransport = new TServerSocket(9898);
 
             //
