@@ -3,12 +3,11 @@ package com.dk.designpatterns.decorate.io;
 import java.io.*;
 
 /**
- * @author DingKai
- * @Classname InputTest
- * @Description Java I/O package used decorate patterns;
+ *  Java I/O package used decorate patterns;
  *              We can extends FilterInputStream to easy-use java I/O package and
  *              Expansion this.
- * @create 2019/2/22
+ * @author DingKai
+ * @version 1.0
  */
 public class InputTest {
     public static void main(String[] args) {

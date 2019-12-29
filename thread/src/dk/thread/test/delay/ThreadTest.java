@@ -2,9 +2,7 @@ package dk.thread.test.delay;
 
 /**
  * @author DingKai
- * @Classname ThreadTest
- * @Description TODO
- * @create 2019/4/24
+ * @version 1.0
  */
 public class ThreadTest extends Thread {
     @Override

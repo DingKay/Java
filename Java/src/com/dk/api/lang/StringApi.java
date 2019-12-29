@@ -3,10 +3,9 @@ package com.dk.api.lang;
 import com.dk.util.Out;
 
 /**
+ * To learn String class at lang package.
  * @author DingKai
- * @Classname StringApi
- * @Description To learn String class at lang package.
- * @create 2019/1/15
+ * @version 1.0
  */
 public class StringApi {
     /**

@@ -6,10 +6,9 @@ import java.util.Observable;
 import java.util.Observer;
 
 /**
+ * ProgressObserver
  * @author DingKai
- * @Classname StatisticDisplay
- * @Description ProgressObserver
- * @create 2019/2/14
+ * @version 1.0
  */
 public class StatisticDisplay implements DisplayElement, Observer {
     private float temperature;

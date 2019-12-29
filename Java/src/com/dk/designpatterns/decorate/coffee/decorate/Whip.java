@@ -4,10 +4,9 @@ import com.dk.designpatterns.decorate.coffee.abst.Beverage;
 import com.dk.designpatterns.decorate.coffee.abst.CondimentDecorator;
 
 /**
+ * milk foam.. of whip
  * @author DingKai
- * @Classname Whip
- * @Description milk foam.. of whip
- * @create 2019/2/19
+ * @version 1.0
  */
 public class Whip extends CondimentDecorator {
     @Override

@@ -7,9 +7,7 @@ import java.security.NoSuchAlgorithmException;
 
 /**
  * @author DingKai
- * @Classname AESUtils
- * @Description TODO
- * @create 2019/3/15
+ * @version 1.0
  */
 public class AesUtils {
     /**

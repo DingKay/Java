@@ -4,10 +4,8 @@ import com.dk.designpatterns.decorate.coffee.abst.Beverage;
 import com.dk.designpatterns.decorate.coffee.abst.CondimentDecorator;
 
 /**
+ * The Condiment of Soy milk
  * @author DingKai
- * @Classname Soy
- * @Description The Condiment of Soy milk
- * @create 2019/2/19
  */
 public class Soy extends CondimentDecorator {
     @Override

@@ -2,9 +2,7 @@ package plugin.progressbar.progressbar;
 
 /**
  * @author DingKai
- * @Classname CodeProgressBar
- * @Description TODO
- * @create 2019/2/18
+ * @version 1.0
  */
 public class CodeProgressBar {
     private double barLength;

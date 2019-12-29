@@ -7,17 +7,15 @@ import java.util.List;
 
 /**
  * @author DingKai
- * @Classname RepeatListString
- * @Description TODO
- * @create 2019/4/8
+ * @version 1.0
  */
 public class RepeatListString {
     public static void main(String[] args) {
-        String TextString = "ab,ac,db,12,21,33,dk,ab,22,33,22,11,99,dk,dk1";
+        String textString = "ab,ac,db,12,21,33,dk,ab,22,33,22,11,99,dk,dk1";
 
         RepeatListString rls = new RepeatListString();
 
-        List<String> stringList = rls.stringToList(TextString);
+        List<String> stringList = rls.stringToList(textString);
 
         List<String> repeat = rls.repeat(stringList);
 

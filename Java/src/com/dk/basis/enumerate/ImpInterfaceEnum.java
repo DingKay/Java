@@ -1,17 +1,26 @@
 package com.dk.basis.enumerate;
 
 /**
+ * To Learn Enumerate 5:Class Enumerate Can Implements An Interface
  * @author DingKai
- * @Classname ImpInterfaceEnum
- * @Description To Learn Enumerate 5:Class Enumerate Can Implements An Interface
- * @create 2019/1/7
+ * @version 1.0
  */
 public class ImpInterfaceEnum {
-    interface interEnum{
+    interface InterEnum{
+        /**
+         * output
+         */
         void print();
+        /**
+         * obtain
+         * @return java.lang.String
+         */
         String getInfo();
     }
-    enum Color implements interEnum{
+    enum Color implements InterEnum{
+        /**
+         * this is comment
+         */
         YELLOW("yellow",1);
 
         Color(String name,int index){

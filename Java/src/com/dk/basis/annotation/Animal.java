@@ -1,12 +1,10 @@
 package com.dk.basis.annotation;
 
 /**
+ * To Learn Java Annotation : Three Basic Annotation
  * @author DingKai
- * @Classname Animal
- * @Description To Learn Java Annotation : Three Basic Annotation
- * @create 2019/1/8
+ * @version 1.0
  */
-@SuppressWarnings("unchecked")
 public class Animal {
     public void eat(){
         System.out.println("Animal Eat Method");

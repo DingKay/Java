@@ -6,10 +6,9 @@ import java.util.Observable;
 import java.util.Observer;
 
 /**
+ * ProgressObserver
  * @author DingKai
- * @Classname ForecastDisplay
- * @Description ProgressObserver
- * @create 2019/2/14
+ * @version 1.0
  */
 public class ForecastDisplay implements Observer, DisplayElement {
     private float pressure;

@@ -9,12 +9,12 @@ import org.apache.thrift.transport.TServerSocket;
 import org.apache.thrift.transport.TTransportException;
 
 /**
- * @author dingkai
- * @create 2018-10-19 9:33
+ * @author DingKai
+ * @version 1.0
  */
 public class HelloServiceServer {
     /**
-     * 启动Thrift服务器
+     * 启动Thrift服务
      * @param args
      */
     public static void main(String[] args) {

@@ -13,7 +13,6 @@ import java.util.Scanner;
  * when an com.dk.basis.exception is thrown, customer input will always at com.dk.basis.exception thrown time, so always thrown
  * com.dk.basis.exception at infinite loop.</p>
  * @author DingKai
- * @date  2019/4/23
  * @version 1.0
  */
 public class NextLineTest {

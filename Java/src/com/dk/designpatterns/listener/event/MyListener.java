@@ -1,10 +1,9 @@
 package com.dk.designpatterns.listener.event;
 
 /**
+ * Implements {@link Listenable} Interface.
  * @author DingKai
- * @Classname MyListener
- * @Description Implements {@link Listenable} Interface.
- * @create 2019/1/31
+ * @version 1.0
  */
 public class MyListener implements Listenable {
     @Override

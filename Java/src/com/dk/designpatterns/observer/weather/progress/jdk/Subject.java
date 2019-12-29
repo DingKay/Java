@@ -3,10 +3,9 @@ package com.dk.designpatterns.observer.weather.progress.jdk;
 import java.util.Observable;
 
 /**
+ * Override Observable
  * @author DingKai
- * @Classname Subject
- * @Description Override Observable
- * @create 2019/2/18
+ * @version 1.0
  */
 public class Subject extends Observable {
 

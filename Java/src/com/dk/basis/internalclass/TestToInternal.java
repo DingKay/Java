@@ -1,8 +1,8 @@
-package com.dk.basis.internal_class;
+package com.dk.basis.internalclass;
 
 /**
- * @author dingkai
- * @create 2018-11-16 15:17
+ * @author DingKai
+ * @version 1.0
  */
 public class TestToInternal {
     public static void main(String[] args) {

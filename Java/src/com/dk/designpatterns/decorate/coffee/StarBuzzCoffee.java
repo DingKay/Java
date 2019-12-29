@@ -7,10 +7,9 @@ import com.dk.designpatterns.decorate.coffee.decorate.Whip;
 import com.dk.util.Out;
 
 /**
+ * Drink Shop
  * @author DingKai
- * @Classname StarBuzzCoffee
- * @Description Drink Shop
- * @create 2019/2/19
+ * @version 1.0
  */
 public class StarBuzzCoffee {
     public static void main(String[] args) {

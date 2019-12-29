@@ -4,10 +4,9 @@ import com.dk.designpatterns.strategy.duck.interf.FlyBehavior;
 import com.dk.designpatterns.strategy.duck.interf.QuackBehavior;
 
 /**
+ * The Duck supertype
  * @author DingKai
- * @Classname Duck
- * @Description The Duck supertype
- * @create 2019/2/11
+ * @version 1.0
  */
 public class Duck {
     String color;

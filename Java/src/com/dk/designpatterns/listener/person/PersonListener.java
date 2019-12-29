@@ -2,26 +2,20 @@ package com.dk.designpatterns.listener.person;
 
 /**
  * @author DingKai
- * @Classname PersonListener
- * @Description TODO
- * @create 2019/1/28
+ * @version 1.0
  */
 public interface PersonListener {
     /**
      * do run method
      * @author DingKai
-     * @date 2019/5/27
-     * @param even
-     * @return void
+     * @param even Even obj
      */
-    void dorun(Even even);
+    void doRun(Even even);
 
     /**
      * do eat method
      * @author DingKai
-     * @date 2019/5/27
-     * @param even
-     * @return void
+     * @param even Even obj
      */
-    void doeat(Even even);
+    void doEat(Even even);
 }

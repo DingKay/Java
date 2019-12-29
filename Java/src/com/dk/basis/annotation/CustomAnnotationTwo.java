@@ -1,10 +1,9 @@
 package com.dk.basis.annotation;
 
 /**
+ * To learn annotation : Input parameter in annotation
  * @author DingKai
- * @Classname CustomAnnotationTwo
- * @Description To learn annotation : Input parameter in annotation
- * @create 2019/1/8
+ * @version 1.0
  */
 public @interface CustomAnnotationTwo {
     String username();

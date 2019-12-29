@@ -2,9 +2,7 @@ package dk.thread.test.threadpool;
 
 /**
  * @author DingKai
- * @Classname ToTestThreadPoolExecutorFour
- * @Description TODO
- * @create 2018-12-10
+ * @version 1.0
  */
 public class ToTestThreadPoolExecutorFour {
     public static void main(String[] args) {

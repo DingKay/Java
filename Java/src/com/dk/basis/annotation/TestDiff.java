@@ -7,28 +7,27 @@ import java.lang.annotation.*;
 import java.lang.reflect.Field;
 
 /**
- * @author DingKai
- * @Classname AnnotationListenerTest
- * @Description To solve {@link AnnotationListenerTest} problem
+ *  To solve {@link AnnotationListenerTest} problem
  *              No use inner class of member variable
- * @create 2019/1/22
+ * @author DingKai
+ * @version 1.0
  */
 
 @Target(ElementType.FIELD)
 @Documented
 @Inherited
 @Retention(RetentionPolicy.RUNTIME)
-@interface ActionListenerAnno{
+@interface ActionListenerAnnotation{
     Class<? extends ActionListener> listener();
 }
 
 public class TestDiff {
     JFrame jFrame = new JFrame("Test");
 
-    @ActionListenerAnno(listener = okListener.class)
+    @ActionListenerAnnotation(listener = okListener.class)
     private JButton okButton = new JButton("confirm");
 
-    @ActionListenerAnno(listener = cancel.class)
+    @ActionListenerAnnotation(listener = cancel.class)
     private JButton cancelButton = new JButton("cancelButton");
 
     public void init() throws InstantiationException, IllegalAccessException, ClassNotFoundException {
@@ -71,7 +70,7 @@ class ButtonListener{
         Field[] declaredFields = clazz.getDeclaredFields();
         for (Field f : declaredFields) {
             f.setAccessible(true);
-            ActionListenerAnno a = f.getAnnotation(ActionListenerAnno.class);
+            ActionListenerAnnotation a = f.getAnnotation(ActionListenerAnnotation.class);
             Object jButtonObj = f.get(obj);
             if (a != null && jButtonObj instanceof AbstractButton){
                 Class<? extends ActionListener> listener = a.listener();

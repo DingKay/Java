@@ -1,12 +1,10 @@
-package com.dk.basis.operator.constructor_block;
+package com.dk.basis.operator.constructorblock;
 
 import com.dk.util.Out;
 
 /**
  * @author DingKai
- * @Classname Test
- * @Description TODO
- * @create 2019/4/22
+ * @version 1.0
  */
 public class Test {
     public static void main(String[] args) {

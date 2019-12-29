@@ -1,17 +1,22 @@
 package com.dk.basis.enumerate;
 
 /**
- * @author DingKai
- * @Classname SwitchEnum
- * @Description To Learn Enumerate 2:switch
+ *  To Learn Enumerate 2:switch
  *              Since JDK 1.6 :switch Statement Can Use Enumerate
  *              More Fast and Easy
- * @create 2019/1/4
+ * @author DingKai
+ * @version 1.0
  */
 enum toSwitchEnum {
+    /**
+     * this is comment
+     */
     ONE,TWO,THREE
 }
 
+/**
+ * Switch to enumerate
+ */
 public class SwitchEnum {
     public static void main(String[] args) {
         toSwitchEnum color = toSwitchEnum.ONE;

@@ -4,10 +4,8 @@ import com.dk.designpatterns.decorate.coffee.abst.Beverage;
 import com.dk.designpatterns.decorate.coffee.abst.CondimentDecorator;
 
 /**
+ * The Condiment of Mocha
  * @author DingKai
- * @Classname Mocha
- * @Description The Condiment of Mocha
- * @create 2019/2/19
  */
 public class Mocha extends CondimentDecorator {
     public Mocha(Beverage beverage) {

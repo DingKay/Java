@@ -5,8 +5,8 @@ import com.dk.util.Out;
 /**
  * @author DingKai
  * @Classname CloneTest
- * @Description TODO
- * @create 2019/4/17
+ * TODO
+ * @date 2019/4/17
  */
 public class CloneTest {
     public static void main(String[] args) throws CloneNotSupportedException {
@@ -18,7 +18,7 @@ public class CloneTest {
 
         Out.printEqualSign(30);
         // modify common
-        common.setName("newclonename");
+        common.setName("new clone name");
         common.setAge(18);
         // modify common's attribute CloneObj
         CloneObj cloneObj = common.getCloneObj();

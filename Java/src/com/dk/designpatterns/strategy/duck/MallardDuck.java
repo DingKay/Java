@@ -4,10 +4,9 @@ import com.dk.designpatterns.strategy.duck.interf.imp.FlyWithWings;
 import com.dk.designpatterns.strategy.duck.interf.imp.Quack;
 
 /**
+ * Concrete implementation class
  * @author DingKai
- * @Classname MallardDuck
- * @Description Concrete implementation class
- * @create 2019/2/11
+ * @version 1.0
  */
 public class MallardDuck extends Duck{
 

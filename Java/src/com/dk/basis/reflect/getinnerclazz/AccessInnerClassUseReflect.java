@@ -6,10 +6,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Modifier;
 
 /**
+ * raw types Passing parameters with generics when passing parameters
  * @author DingKai
- * @Classname AccessInnerClassUseReflect
- * @Description rawtypes Passing parameters with generics when passing parameters
- * @create 2019/1/23
+ * @version 1.0
  */
 
 @SuppressWarnings({"unchecked","rawtypes"})

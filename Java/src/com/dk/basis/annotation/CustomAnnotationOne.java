@@ -1,12 +1,16 @@
 package com.dk.basis.annotation;
 
 /**
+ * To Learn Annotation 1: To Defined A CustomAnnotationOne
  * @author DingKai
- * @Classname CustomAnnotationOne
- * @Description To Learn Annotation 1: To Defined A CustomAnnotationOne
- * @create 2019/1/8
+ * @version 1.0
  */
 public @interface CustomAnnotationOne {}
+/**
+ * 自定义注解
+ * @author DingKai
+ * @date 2019/12/23
+ */
 @interface CustomAnnotationInner {}
 
 class TestOne{

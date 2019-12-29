@@ -3,10 +3,9 @@ package com.dk.api.util;
 import java.util.*;
 
 /**
+ * To learn Arrays class at util package.
  * @author DingKai
- * @Classname ArraysApi
- * @Description To learn Arrays class at util package.
- * @create 2019/1/15
+ * @version 1.0
  */
 @SuppressWarnings("unchecked")
 public class ArraysApi {

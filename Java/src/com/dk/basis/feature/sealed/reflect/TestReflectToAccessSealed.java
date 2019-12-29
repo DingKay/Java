@@ -2,9 +2,7 @@ package com.dk.basis.feature.sealed.reflect;
 
 /**
  * @author DingKai
- * @Classname TestReflectToAccessSealed
- * @Description TODO
- * @create 2018-11-20
+ * @version 1.0
  */
 public class TestReflectToAccessSealed {
 }

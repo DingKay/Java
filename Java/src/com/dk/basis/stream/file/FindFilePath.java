@@ -6,12 +6,10 @@ import java.io.*;
 import java.util.Scanner;
 
 /**
+ *    To find Tim QQ then open it.
+ *    Change : One Thread per Disk To Scanning
  * @author DingKai
- * @Classname FindFilePath
- * @Description
- *              To find Tim QQ then open it.
- *              Change : One Thread per Disk To Scanning
- * @create 2019/1/23
+ *
  */
 public class FindFilePath {
     private static String search = null;
@@ -41,10 +39,8 @@ public class FindFilePath {
     /**
      * recursive method to find file
      * @author DingKai
-     * @date 2019/4/23
-     * @param path
-     * @return void
-     * @exception IOException
+     * @param path app path
+     * @throws java.io.IOException path incorrect
      */
     private void inPath(String path) throws IOException {
         File file = new File(path);

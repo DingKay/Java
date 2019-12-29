@@ -1,11 +1,10 @@
 package com.dk.util;
 
 /**
- * @author DingKai
- * @Classname Out
- * @Description Faster use and faster work ,In this repository ,so many class or other display console output.
+ *  Faster use and faster work ,In this repository ,so many class or other display console output.
  *              so create this util class for distinguish different situation of console output
- * @create 2019/2/11
+ * @author DingKai
+ * @version 1.0
  */
 public class Out {
 
@@ -88,7 +87,6 @@ public class Out {
 
     /**
      * print with color
-     * @date 2019/5/20
      * @param string string to be output
      * @param color color when output
      * @param bold whether to bold the string, true is bold ;false no bold
@@ -131,8 +129,8 @@ public class Out {
      * determine if you need to bold text on output
      * @author DingKai
      * @date 2019/5/24
-     * @param string
-     * @param bold
+     * @param string text
+     * @param bold bold text
      * @return java.lang.String
      */
     private static String withBold(String string, boolean bold) {

@@ -1,10 +1,9 @@
 package com.dk.basis.reflect.getinnerclazz;
 
 /**
+ * Test get method or field use reflect at runtime.
  * @author DingKai
- * @Classname InnerContainer
- * @Description Test get method or field use reflect at runtime.
- * @create 2019/1/23
+ * @version 1.0
  */
 public class InnerContainer {
     public class InnerA{

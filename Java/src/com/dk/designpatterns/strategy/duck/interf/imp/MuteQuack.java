@@ -3,10 +3,9 @@ package com.dk.designpatterns.strategy.duck.interf.imp;
 import com.dk.designpatterns.strategy.duck.interf.QuackBehavior;
 
 /**
+ * Duck Quack ,implement {@link QuackBehavior} interface
  * @author DingKai
- * @Classname MuteQuack
- * @Description Duck Quack ,implement {@link QuackBehavior} interface
- * @create 2019/2/11
+ * @version 1.0
  */
 public class MuteQuack implements QuackBehavior {
     @Override

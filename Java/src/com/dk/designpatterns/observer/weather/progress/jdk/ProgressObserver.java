@@ -4,10 +4,9 @@ import java.util.Observable;
 import java.util.Observer;
 
 /**
+ * Achieve Observable
  * @author DingKai
- * @Classname ProgressObserver
- * @Description Achieve Observable
- * @create 2019/2/18
+ * @version 1.0
  */
 public class ProgressObserver implements Observer {
     private int value;

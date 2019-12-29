@@ -6,10 +6,9 @@ import com.dk.designpatterns.observer.weather.customize.inerf.Subject;
 import java.util.ArrayList;
 
 /**
+ * Observable
  * @author DingKai
- * @Classname WeatherData
- * @Description Observable
- * @create 2019/2/13
+ * @version 1.0
  */
 public class WeatherData implements Subject {
     private ArrayList observers;

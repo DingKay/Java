@@ -3,10 +3,9 @@ package com.dk.designpatterns.observer.weather.jdkutil;
 import java.util.Observable;
 
 /**
+ * Observable :registerObserver, removeObserver, notifyObserver is achieve from supertype
  * @author DingKai
- * @Classname WeatherData
- * @Description Observable :registerObserver, removeObserver, notifyObserver is achieve from supertype
- * @create 2019/2/14
+ * @version 1.0
  */
 public class WeatherData extends Observable {
     private float temperature;

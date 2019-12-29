@@ -1,10 +1,9 @@
 package com.dk.designpatterns;
 
 /**
+ * The one of Design Patterns : 1. Factory Model
  * @author DingKai
- * @Classname Factory
- * @Description The one of Design Patterns : 1. Factory Model
- * @create 2019/1/31
+ * @version 1.0
  */
 public class Factory {
 }

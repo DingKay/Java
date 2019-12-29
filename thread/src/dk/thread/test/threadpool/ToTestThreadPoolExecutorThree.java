@@ -8,9 +8,7 @@ import static dk.thread.test.threadpool.ThreadPoolExecutorUtils.*;
 
 /**
  * @author DingKai
- * @Classname ToTestThreadPoolExecutorThree
- * @Description TODO
- * @create 2018-12-10
+ * @version 1.0
  */
 public class ToTestThreadPoolExecutorThree {
     public static void main(String[] args) throws InterruptedException {

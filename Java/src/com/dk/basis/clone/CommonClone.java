@@ -3,8 +3,8 @@ package com.dk.basis.clone;
 /**
  * @author DingKai
  * @Classname CommonClone
- * @Description review: Java shallow clone
- * @create 2019/4/17
+ *  review: Java shallow clone
+ * @date 2019/4/17
  */
 public class CommonClone implements Cloneable {
 

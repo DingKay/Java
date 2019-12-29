@@ -4,10 +4,9 @@ import java.lang.annotation.*;
 import java.lang.reflect.Method;
 
 /**
+ * To learn annotation : Create default value annotation
  * @author DingKai
- * @Classname CustomAnnotationFour
- * @Description To learn annotation : Create default value annotation
- * @create 2019/1/8
+ * @version 1.0
  */
 public class CustomAnnotationFour {
     @Inherited
@@ -33,7 +32,7 @@ public class CustomAnnotationFour {
         }
         Annotation[] annotations = method.getAnnotations();
         for (Annotation annotation : annotations) {
-            if (annotation != null && annotation instanceof Login){
+            if (annotation instanceof Login){
                 String name = ((Login) annotation).userName();
                 System.out.println("name = " + name);
                 String pwd = ((Login) annotation).password();

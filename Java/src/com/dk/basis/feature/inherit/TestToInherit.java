@@ -6,7 +6,7 @@ import java.lang.reflect.Field;
 
 /**
  * @author DingKai
- * @date 2018/11/19
+ * @version 1.0
  */
 public class TestToInherit {
     public static void main(String[] args) throws IllegalAccessException, InstantiationException, NoSuchFieldException {

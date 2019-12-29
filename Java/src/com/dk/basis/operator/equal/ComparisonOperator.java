@@ -2,9 +2,7 @@ package com.dk.basis.operator.equal;
 
 /**
  * @author DingKai
- * @Classname ComparisonOperator
- * @Description TODO
- * @create 2019/1/23
+ * @version 1.0
  */
 public class ComparisonOperator {
     public static void main(String[] args) {

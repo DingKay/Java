@@ -1,10 +1,9 @@
 package com.dk.basis.annotation;
 
 /**
+ * To learn annotation.
  * @author DingKai
- * @Classname CustomAnnotationThree
- * @Description To learn annotation.
- * @create 2019/1/8
+ * @version 1.0
  */
 public @interface CustomAnnotationThree {
     String userName() default "KayDing";

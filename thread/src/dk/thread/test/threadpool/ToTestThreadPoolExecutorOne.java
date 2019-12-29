@@ -7,13 +7,12 @@ import java.util.concurrent.TimeUnit;
 import static dk.thread.test.threadpool.ThreadPoolExecutorUtils.*;
 
 /**
+ * To Test ThreadPoolExecutor Rule And Find The Difference.
+ *    If ThreadPoolExecutor Parameter Use SynchronousQueue Then When
+ *    Task Execute Will Create A New Thread.
+ *    SynchronousQueue Will Not To Storage Task
  * @author DingKai
- * @Classname ToTestThreadPoolExecutorOne
- * @Description To Test ThreadPoolExecutor Rule And Find The Difference.
-                If ThreadPoolExecutor Parameter Use SynchronousQueue Then When
-                Task Execute Will Create A New Thread.
-                SynchronousQueue Will Not To Storage Task
- * @create 2018-12-10
+ * @version 1.0
  */
 public class ToTestThreadPoolExecutorOne {
     public static void main(String[] args) throws InterruptedException {

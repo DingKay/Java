@@ -1,10 +1,9 @@
 package com.dk.designpatterns.listener.event;
 
 /**
+ * Passing Event Object.
  * @author DingKai
- * @Classname MyEvent
- * @Description Passing Event Object.
- * @create 2019/1/30
+ * @version 1.0
  */
 public class MyEvent {
     private int value;

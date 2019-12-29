@@ -2,9 +2,7 @@ package com.dk.basis.operator.cycle;
 
 /**
  * @author DingKai
- * @Classname ToUseLabel
- * @Description TODO
- * @create 2019/1/23
+ * @version 1.0
  */
 public class ToUseLabel {
     public static void main(String[] args) {

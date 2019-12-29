@@ -3,10 +3,9 @@ package com.dk.designpatterns.strategy.duck.interf.imp;
 import com.dk.designpatterns.strategy.duck.interf.FlyBehavior;
 
 /**
+ * Duck fly with wings ,implement {@link FlyBehavior} Interface
  * @author DingKai
- * @Classname FlyWithWings
- * @Description Duck fly with wings ,implement {@link FlyBehavior} Interface
- * @create 2019/2/11
+ * @version 1.0
  */
 public class FlyWithWings implements FlyBehavior {
     @Override

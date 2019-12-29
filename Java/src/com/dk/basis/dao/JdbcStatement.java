@@ -10,7 +10,6 @@ import java.util.Properties;
 /**
  * @author DingKai
  * @version 1.0
- * @date 2019/5/30
  */
 public class JdbcStatement {
     /**

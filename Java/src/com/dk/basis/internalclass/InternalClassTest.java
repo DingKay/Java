@@ -1,8 +1,8 @@
-package com.dk.basis.internal_class;
+package com.dk.basis.internalclass;
 
 /**
- * @author dingkai
- * @create 2018-11-15 10:49
+ * @author DingKai
+ * @version 1.0
  */
 public class InternalClassTest {
 

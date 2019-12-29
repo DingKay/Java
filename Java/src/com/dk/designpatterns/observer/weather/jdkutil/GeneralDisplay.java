@@ -8,10 +8,8 @@ import java.util.Observer;
 
 
 /**
+ * ProgressObserver
  * @author DingKai
- * @Classname GeneralDisplay
- * @Description ProgressObserver
- * @create 2019/2/14
  */
 public class GeneralDisplay implements Observer, DisplayElement {
     private Observable observable;

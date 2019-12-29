@@ -2,9 +2,7 @@ package com.dk.designpatterns.listener.person;
 
 /**
  * @author DingKai
- * @Classname TestListener
- * @Description TODO
- * @create 2019/1/28
+ * @version 1.0
  */
 public class TestListener {
     public static void main(String[] args) {
@@ -17,13 +15,13 @@ public class TestListener {
 
 class PersonListenerImpl implements PersonListener{
     @Override
-    public void dorun(Even even) {
+    public void doRun(Even even) {
         Person person = even.getPerson();
         System.out.println("prepared");
     }
 
     @Override
-    public void doeat(Even even) {
+    public void doEat(Even even) {
         Person person = even.getPerson();
         System.out.println("washingHands");
     }

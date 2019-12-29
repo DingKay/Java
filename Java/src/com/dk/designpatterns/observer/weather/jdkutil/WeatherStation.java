@@ -1,10 +1,9 @@
 package com.dk.designpatterns.observer.weather.jdkutil;
 
 /**
+ * Test weather screen
  * @author DingKai
- * @Classname WeatherStation
- * @Description Test weather screen
- * @create 2019/2/14
+ * @version 1.0
  */
 public class WeatherStation {
     public static void main(String[] args) {

@@ -1,10 +1,9 @@
 package com.dk.designpatterns.observer.weather.progress.customize.interf;
 
 /**
+ * Observable
  * @author DingKai
- * @Classname ProgressObserver
- * @Description Observable
- * @create 2019/2/15
+ * @version 1.0
  */
 public interface Observer {
     /**

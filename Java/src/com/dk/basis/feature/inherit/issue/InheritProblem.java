@@ -3,11 +3,10 @@ package com.dk.basis.feature.inherit.issue;
 import com.dk.basis.feature.inherit.issue.obj.Elephant;
 
 /**
+ * Subclass inherit Base Class all of attribute or method
+ * then use reflect method to modify base class
  * @author DingKai
- * @Classname inheritProblem
- * @Description Subclass inherit Base Class all of attribute or method
- *              then use reflect method to modify base class
- * @date 2019/4/30
+ * @version 1.0
  */
 public class InheritProblem {
     public static void main(String[] args){

@@ -4,10 +4,9 @@ import java.lang.annotation.*;
 import java.lang.reflect.Method;
 
 /**
+ * To Learn Annotation.
  * @author DingKai
- * @Classname CustomAnnotationFive
- * @Description To Learn Annotation.
- * @create 2019/1/21
+ * @version 1.0
  */
 public class CustomAnnotationFive {
     @Target(ElementType.METHOD)

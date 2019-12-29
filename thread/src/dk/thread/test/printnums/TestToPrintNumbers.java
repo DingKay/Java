@@ -1,16 +1,15 @@
 package dk.thread.test.printnums;
 
 /**
- * @author DingKai
- * @Classname TestToPrintNumbers
- * @Description Use Anonymous Inner Class To Create Two Thread Then Print A And Print B Separately.
+ * Use Anonymous Inner Class To Create Two Thread Then Print A And Print B Separately.
  * Launch This Class To Test Threads Used Time. Extract Thread Code To Method So As To Measure Time.
  * At Last We Found Degrades Performance When Use Java 8 New Features Lambda Expression.
- * @create 2018-11-23
+ * @author DingKai
+ * @version 1.0
  */
 public class TestToPrintNumbers {
 
-    private volatile Short i=0;
+    private volatile Short i = 0;
 
     private Object lock = new Object();
 
@@ -49,7 +48,9 @@ public class TestToPrintNumbers {
         System.out.println("Print Numbers 0 To 100 Time Spent Using Foreach ==> " + (System.currentTimeMillis() - startTimeWithForeach));
     }
 
-    //Lambda Thread
+    /**
+     * Lambda Thread
+     */
     private void toGetThreadTimeWithLambda() {
         Thread t1 = new Thread(() ->{
             threadOddNums();
@@ -69,7 +70,9 @@ public class TestToPrintNumbers {
         flagExist();
     }
 
-    //Two Threads
+    /**
+     * Two Threads
+     */
     private void toGetThreadTime() {
         Thread t1 = new Thread(){
             @Override
@@ -111,8 +114,9 @@ public class TestToPrintNumbers {
                     }
                 }
             }
-            if (i == total)
+            if (i == total) {
                 setFlag(true);
+            }
         }
     }
 
@@ -133,9 +137,11 @@ public class TestToPrintNumbers {
         }
     }
 
-    //Flag For Notify ==Main Thread ==
+    /**
+     * Flag For Notify ==Main Thread ==
+     */
     private void flagExist() {
-        while (!isFlag())
+        while (!isFlag()) {
             synchronized (this) {
                 try {
                     this.wait();
@@ -143,9 +149,12 @@ public class TestToPrintNumbers {
                     e.printStackTrace();
                 }
             }
+        }
     }
 
-    //Normal Standard >>Foreach<<
+    /**
+     * Normal Standard >>Foreach<<
+     */
     private void toGetPrintNumbersTime(){
         System.out.println("== Foreach Start ==");
         for (int j = 0; j <= 100; j++) {

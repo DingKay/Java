@@ -9,8 +9,8 @@ import org.apache.thrift.transport.TTransport;
 import org.apache.thrift.transport.TTransportException;
 
 /**
- * @author dingkai
- * @create 2018-10-19 9:42
+ * @author DingKai
+ * @version 1.0
  */
 public class HelloServiceCilent {
     /**

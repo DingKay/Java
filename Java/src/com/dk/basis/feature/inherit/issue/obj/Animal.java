@@ -3,10 +3,9 @@ package com.dk.basis.feature.inherit.issue.obj;
 import org.jetbrains.annotations.Contract;
 
 /**
+ * base class
  * @author DingKai
- * @Classname Animal
- * @Description base class
- * @date 2019/4/30
+ * @version 1.0
  */
 public class Animal {
     private int legNum;

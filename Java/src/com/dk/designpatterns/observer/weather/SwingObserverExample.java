@@ -7,9 +7,7 @@ import java.awt.event.ActionListener;
 
 /**
  * @author DingKai
- * @Classname SwingObserverExample
- * @Description TODO Swing to learn
- * @create 2019/2/19
+ * @version 1.0
  */
 public class SwingObserverExample {
     JFrame jFrame;

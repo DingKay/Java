@@ -1,10 +1,9 @@
 package com.dk.designpatterns.strategy.duck.interf;
 
 /**
+ * Interface of Duck quack
  * @author DingKai
- * @Classname QuackBehavior
- * @Description Interface of Duck quack
- * @create 2019/2/11
+ * @version 1.0
  */
 public interface QuackBehavior {
     /**

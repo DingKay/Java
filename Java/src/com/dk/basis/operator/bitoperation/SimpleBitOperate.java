@@ -4,9 +4,7 @@ import com.dk.util.Out;
 
 /**
  * @author DingKai
- * @Classname SimpleBitOperate
- * @Description TODO
- * @create 2019/4/22
+ * @version 1.0
  */
 public class SimpleBitOperate {
     /**

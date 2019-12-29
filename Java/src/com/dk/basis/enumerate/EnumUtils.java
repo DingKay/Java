@@ -5,13 +5,15 @@ import java.util.EnumSet;
 import java.util.Map;
 
 /**
+ * To Learn Enumerate 7:Common Tool Methods
  * @author DingKai
- * @Classname EnumUtils
- * @Description To Learn Enumerate 7:Common Tool Methods
- * @create 2019/1/7
+ * @version 1.0
  */
 public class EnumUtils {
     enum Color{
+        /**
+         * this is comment
+         */
         RED,BLUE,YELLOW
     }
 
@@ -19,7 +21,7 @@ public class EnumUtils {
         //Enumerate Default Inherit Class Enum
         System.out.println("Enumerate Instance Of Class Enum: \n" + String.valueOf(
                 Color.class.getSuperclass() == Enum.class));
-        boolean flag = Color.RED instanceof Enum ? true : false;
+        boolean flag = Color.RED instanceof Enum;
         System.out.println("flag = " + flag);
 
         //Enumerate Default 'name' And 'ordinal' Attributes,'ordinal' Start With Zero

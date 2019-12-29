@@ -3,10 +3,9 @@ package com.dk.designpatterns.decorate.coffee;
 import com.dk.designpatterns.decorate.coffee.abst.Beverage;
 
 /**
+ * Drink of House Blend
  * @author DingKai
- * @Classname HouseBlend
- * @Description Drink of House Blend
- * @create 2019/2/19
+ * @version 1.0
  */
 public class HouseBlend extends Beverage {
     public HouseBlend() {

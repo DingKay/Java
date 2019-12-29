@@ -6,7 +6,6 @@ import java.net.UnknownHostException;
 /**
  * @author DingKai
  * @version 1.0
- * @date 2019/6/6
  */
 public class Sys {
 

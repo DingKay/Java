@@ -2,9 +2,7 @@ package com.dk.designpatterns.listener.person;
 
 /**
  * @author DingKai
- * @Classname Even
- * @Description TODO
- * @create 2019/1/28
+ * @version 1.0
  */
 public class Even {
     private Person person;

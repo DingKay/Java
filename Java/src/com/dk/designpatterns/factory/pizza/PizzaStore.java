@@ -2,9 +2,7 @@ package com.dk.designpatterns.factory.pizza;
 
 /**
  * @author DingKai
- * @Classname PizzaStore
- * @Description TODO
- * @create 2019/2/22
+ * @version 1.0
  */
 public class PizzaStore {
     public void orderPizza(){

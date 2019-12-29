@@ -5,9 +5,7 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * @author DingKai
- * @Classname SimpleException
- * @Description TODO
- * @create 2019/4/23
+ * @version 1.0
  */
 public class SimpleException extends Throwable {
     private String errMsg;

@@ -1,10 +1,9 @@
 package com.dk.designpatterns.strategy.duck.interf;
 
 /**
+ * Interface of duck fly
  * @author DingKai
- * @Classname FlyBehavior
- * @Description Interface of duck fly
- * @create 2019/2/11
+ * @version 1.0
  */
 public interface FlyBehavior {
     /**

@@ -1,19 +1,15 @@
 package com.dk.designpatterns.listener.event;
 
 /**
+ * Listener Interface.
  * @author DingKai
- * @Classname Listenable
- * @Description Listener Interface.
- * @create 2019/1/30
+ * @version 1.0
  */
 public interface Listenable {
     /**
      * event listen
      * @author DingKai
-     * @date 2019/5/27
-     * @param event
-     * @return void
-     * @throws
+     * @param event the event obj
      */
     void eventChanged(MyEvent event);
 }

@@ -2,9 +2,7 @@ package com.dk.basis.operator.judge;
 
 /**
  * @author DingKai
- * @Classname JudgeTest
- * @Description TODO
- * @create 2019/4/19
+ * @version 1.0
  */
 public class JudgeTest {
     public static void main(String[] args) {

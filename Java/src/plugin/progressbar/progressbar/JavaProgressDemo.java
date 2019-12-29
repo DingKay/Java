@@ -6,16 +6,14 @@ import java.awt.*;
 
 /**
  * @author DingKai
- * @Classname JProgressDemo
- * @Description TODO
- * @create 2019/2/18
+ * @version 1.0
  */
-public class JProgressDemo extends JFrame {
+public class JavaProgressDemo extends JFrame {
     private static final long serialVersionUID = 1L;
 
     private JProgressBar processBar;
 
-    public JProgressDemo(){
+    public JavaProgressDemo(){
         /*set The Form Title*/
         setTitle("progressBarUse");
 
@@ -67,7 +65,7 @@ public class JProgressDemo extends JFrame {
     }
 
     public static void main(String[] args) {
-        JProgressDemo jpd = new JProgressDemo();
+        JavaProgressDemo jpd = new JavaProgressDemo();
         jpd.setVisible(true);
     }
 }

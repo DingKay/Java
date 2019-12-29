@@ -9,19 +9,18 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 
 /**
+ * **** This Java Program Was Wrong ****
+ * The Problem is here : ButtonListener's xx lines ActionListener al = listenerClazz.newInstance();
+ * Because this program is internal_class Class, Before newInstance() U need had out Class's
+ * Instance.
+ * temporarily unable to solve.
+ * //TO DO how to solve
+ * Create a new class {@link TestDiff}
+ * ===========================
+ * 2019.01.23 :
+ *   Successfully solve the problem !!
  * @author DingKai
- * @Classname AnnotationListenerTest
- * @Description                 **** This Java Program Was Wrong ****
- *              The Problem is here : ButtonListener's xx lines ActionListener al = listenerClazz.newInstance();
- *              Because this program is internal_class Class, Before newInstance() U need had out Class's
- *              Instance.
- *              temporarily unable to solve.
- *              //TO DO how to solve
- *              Create a new class {@link TestDiff}
- *              ===========================
- *              2019.01.23 :
- *              Successfully solve the problem !!
- * @create 2019/1/22
+ * @version 1.0
  */
 public class AnnotationListenerTest {
     @Target(ElementType.FIELD)

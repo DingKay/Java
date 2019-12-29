@@ -1,10 +1,9 @@
 package com.dk.designpatterns.listener.event;
 
 /**
+ * Event Source.
  * @author DingKai
- * @Classname MySource
- * @Description Event Source.
- * @create 2019/1/30
+ * @version 1.0
  */
 public class MySource {
     private int value;

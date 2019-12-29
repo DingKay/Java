@@ -1,8 +1,8 @@
-package com.dk.basis.internal_class;
+package com.dk.basis.internalclass;
 
 /**
- * @author dingkai
- * @create 2018-11-19 16:29
+ * @author DingKai
+ * @version 1.0
  */
 public class InnerClassExtends extends InternalClassTest.Base{
     public InnerClassExtends(InternalClassTest ict){

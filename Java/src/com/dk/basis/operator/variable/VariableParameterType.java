@@ -1,15 +1,14 @@
 package com.dk.basis.operator.variable;
 
 /**
+ * To learn Method's Variable Parameter
  * @author DingKai
- * @Classname VariableParameterType
- * @Description To learn Method's Variable Parameter
- * @create 2019/4/15
+ * @version 1.0
  */
 public class VariableParameterType {
 
     public static void main(String[] args) {
-        Integer dk = new VariableParameterType().getUserIds("dingkai");
+        Integer dk = new VariableParameterType().getUserIds("DingKai");
         System.out.println(dk);
     }
 

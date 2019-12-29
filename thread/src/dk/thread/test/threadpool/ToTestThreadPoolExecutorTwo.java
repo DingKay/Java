@@ -8,11 +8,10 @@ import static dk.thread.test.threadpool.ThreadPoolExecutorUtils.*;
 
 
 /**
+ * When Number Of Task Over Then Core Pool Size.
+ *      ThreadPoolExecutor Will Create A New Thread To Execute Task.
  * @author DingKai
- * @Classname ToTestThreadPoolExecutorTwo
- * @Description When Number Of Task Over Then Core Pool Size.
-                ThreadPoolExecutor Will Create A New Thread To Execute Task.
- * @create 2018-12-10
+ * @version 1.0
  */
 public class ToTestThreadPoolExecutorTwo {
     public static void main(String[] args) throws InterruptedException {

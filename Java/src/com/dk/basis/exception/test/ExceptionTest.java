@@ -5,10 +5,9 @@ import com.dk.basis.exception.customize.SimpleException;
 import org.jetbrains.annotations.Contract;
 
 /**
+ * customize exception
  * @author DingKai
- * @Classname ExceptionTest
- * @Description TODO
- * @create 2019/4/23
+ * @version 1.0
  */
 public class ExceptionTest {
     static {
@@ -36,10 +35,7 @@ public class ExceptionTest {
     /**
      * customize com.dk.basis.exception: SimpleException to test method
      * @author DingKai
-     * @date 2019/4/23
-     * @param
-     * @return void
-     * @exception SimpleException
+     * @throws SimpleException
      */
     @Contract(" -> fail")
     private void simpleExceptionTest() throws SimpleException{

@@ -4,9 +4,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 /**
  * @author DingKai
- * @Classname ThreadPoolExecutorUtils
- * @Description TODO
- * @create 2018-12-10
+ * @version 1.0
  */
 public class ThreadPoolExecutorUtils {
     public static void startThreeThreads(Thread thread, ThreadPoolExecutor threadPoolExecutor) {

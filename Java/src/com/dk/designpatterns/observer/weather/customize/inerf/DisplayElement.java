@@ -1,11 +1,13 @@
 package com.dk.designpatterns.observer.weather.customize.inerf;
 
 /**
+ * interface : display information for screen
  * @author DingKai
- * @Classname DisplayElement
- * @Description interface : display information for screen
- * @create 2019/2/13
+ * @version 1.0
  */
 public interface DisplayElement {
+    /**
+     * display information for screen
+     */
     void display();
 }

@@ -1,13 +1,12 @@
 package com.dk.basis.enumerate;
 
 /**
- * @author DingKai
- * @Classname MethodEnum
- * @Description To Learn Enumerate 3:Add Methods In Enumerate Class
+ *  To Learn Enumerate 3:Add Methods In Enumerate Class
  *              If U Wanna Add Some Customize Methods
  *              Then Must Definition Enumerate Attribute At First
  *              And The Constructor Default 'Private'
- * @create 2019/1/4
+ * @author DingKai
+ * @version 1.0
  */
 public enum MethodEnum {
     /**

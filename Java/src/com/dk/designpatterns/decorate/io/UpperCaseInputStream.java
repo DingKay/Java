@@ -7,10 +7,9 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
+ * decorate patterns : extends FilterInputStream.
  * @author DingKai
- * @Classname UpperCaseInputStream
- * @Description decorate patterns : extends FilterInputStream.
- * @create 2019/2/25
+ * @version 1.0
  */
 public class UpperCaseInputStream extends FilterInputStream {
     protected UpperCaseInputStream(InputStream in) {

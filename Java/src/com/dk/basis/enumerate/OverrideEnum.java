@@ -1,13 +1,15 @@
 package com.dk.basis.enumerate;
 
 /**
+ * To learn Enumerate 4:Override Class Enum toString Method
  * @author DingKai
- * @Classname OverrideEnum
- * @Description To learn Enumerate 4:Override Class Enum toString Method
- * @create 2019/1/7
+ * @version 1.0
  */
 public class OverrideEnum {
     enum Color{
+        /**
+         * this is comment
+         */
         RED(1,"red"),GREEN(2,"green"),BLUE(3,"blue");
 
         private String name;

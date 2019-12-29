@@ -2,9 +2,7 @@ package com.dk.designpatterns.listener.person;
 
 /**
  * @author DingKai
- * @Classname Person
- * @Description TODO
- * @create 2019/1/28
+ * @version 1.0
  */
 public class Person {
     private PersonListener listener;
@@ -16,7 +14,7 @@ public class Person {
     public void eat(){
         if (listener != null) {
             Even even = new Even(this);
-            this.listener.doeat(even);
+            this.listener.doEat(even);
         }
         System.out.println("Eating");
     }
@@ -24,7 +22,7 @@ public class Person {
     public void run(){
         if (listener != null) {
             Even even = new Even(this);
-            this.listener.dorun(even);
+            this.listener.doRun(even);
         }
         System.out.println("Running");
     }

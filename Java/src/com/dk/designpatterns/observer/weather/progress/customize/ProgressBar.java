@@ -4,10 +4,9 @@ import com.dk.designpatterns.observer.weather.progress.customize.interf.Observer
 import com.dk.designpatterns.observer.weather.progress.customize.interf.impl.Observable;
 
 /**
+ * Achieve Observer
  * @author DingKai
- * @Classname ProgressBar
- * @Description Achieve Observer
- * @create 2019/2/15
+ * @version 1.0
  */
 public class ProgressBar implements Observer {
 

@@ -6,10 +6,9 @@ import javax.crypto.Cipher;
 import java.security.Key;
 
 /**
+ * to encrypt or decrypt String with java 'Cipher'
  * @author DingKai
- * @Classname AesTest
- * @Description to encrypt or decrypt String with java 'Cipher'
- * @create 2019/4/22
+ * @version 1.0
  */
 public class AesTest {
     public static void main(String[] args) {

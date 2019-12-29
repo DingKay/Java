@@ -2,9 +2,7 @@ package com.dk.basis.clone;
 
 /**
  * @author DingKai
- * @Classname CloneObj
- * @Description TODO
- * @create 2019/4/17
+ * @version 1.0
  */
 public class CloneObj {
     public String stringTest;

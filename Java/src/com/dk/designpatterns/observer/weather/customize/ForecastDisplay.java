@@ -5,10 +5,9 @@ import com.dk.designpatterns.observer.weather.customize.inerf.Observer;
 import com.dk.designpatterns.observer.weather.customize.inerf.Subject;
 
 /**
+ * ProgressObserver
  * @author DingKai
- * @Classname ForecastDisplay
- * @Description ProgressObserver
- * @create 2019/2/14
+ * @version 1.0
  */
 public class ForecastDisplay implements DisplayElement, Observer {
     private float pressure;

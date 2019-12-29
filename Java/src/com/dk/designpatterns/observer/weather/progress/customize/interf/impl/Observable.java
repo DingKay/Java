@@ -6,10 +6,9 @@ import com.dk.designpatterns.observer.weather.progress.customize.interf.Subject;
 import java.util.ArrayList;
 
 /**
+ * Observable
  * @author DingKai
- * @Classname Observable
- * @Description Observable
- * @create 2019/2/15
+ * @version 1.0
  */
 public class Observable implements Subject {
     private ArrayList observers;

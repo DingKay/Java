@@ -1,11 +1,13 @@
 package com.dk.designpatterns.observer.weather.customize.inerf;
 
 /**
+ * interface : ProgressObserver
  * @author DingKai
- * @Classname ProgressObserver
- * @Description interface : ProgressObserver
- * @create 2019/2/13
+ * @version 1.0
  */
 public interface Observer {
+    /**
+     * ProgressObserver
+     */
     void update(float temp, float humidity, float pressure);
 }

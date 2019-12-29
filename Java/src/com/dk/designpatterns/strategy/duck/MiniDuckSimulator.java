@@ -5,10 +5,9 @@ import com.dk.designpatterns.strategy.duck.interf.imp.MuteQuack;
 import com.dk.util.Out;
 
 /**
+ * To test {@link MallardDuck} class
  * @author DingKai
- * @Classname MiniDuckSimulator
- * @Description To test {@link MallardDuck} class
- * @create 2019/2/11
+ * @version 1.0
  */
 public class MiniDuckSimulator {
     public static void main(String[] args) {

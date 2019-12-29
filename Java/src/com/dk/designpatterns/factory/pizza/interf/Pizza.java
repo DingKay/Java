@@ -1,10 +1,9 @@
 package com.dk.designpatterns.factory.pizza.interf;
 
 /**
+ * The Pizza Interface
  * @author DingKai
- * @Classname Pizza
- * @Description The Pizza Interface
- * @create 2019/2/22
+ * @version 1.0
  */
 public interface Pizza {
     void prepare();
