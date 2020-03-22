@@ -12,7 +12,7 @@ public class StreamDemo01 {
         List<String> list = Arrays.asList("ding", "wang", "chang", "cha");
         long startTime = System.currentTimeMillis();
         normalFunction(list);
-        System.out.println("normalFunction use = " + (System.currentTimeMillis() - startTime));
+        System.out.println("normal function use = " + (System.currentTimeMillis() - startTime));
         startTime = System.currentTimeMillis();
         List<String> listStream = Arrays.asList("kai", "xiu", "wu", "xu");
         List<String> collect = listStream.stream()
